@@ -1,4 +1,4 @@
-const music = new Audio('vande.mp3');
+const music = new Audio('m1.mp3');
 
 const songs = [
     {
@@ -54,9 +54,9 @@ Play.addEventListener('click',()=>{
         music.play();
         Play.classList.remove('bi-play-fill');
         Play.classList.add('bi-pause-fill');
-     }else if (music.played){
-        music.paused();
+     }else {
+        music.pause();
         Play.classList.add('bi-play-fill');
         Play.classList.remove('bi-pause-fill');
      }
-})
+} )
