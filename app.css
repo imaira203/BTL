@@ -372,9 +372,8 @@ header .song_side::before{
   height:370px;
   width:100%;
   background: url('src/img12.jpg');
+  background-size: cover;
   z-index: -1;
-  top:-20px;
-  right:-70px;
  }
 header .song_side nav{
    width: 90%;
@@ -429,7 +428,6 @@ header .song_side nav ul li span {
     left:0;
 }
 header .song_side nav .search{
-   margin-left: 130px;
    color:rgb(174, 174, 244);
    border-radius: 20%;
 } 
@@ -457,13 +455,46 @@ header .song_side nav .search input{
    font-size: 12px;
 }  
 header .song_side nav .user{
-    position: relative;
+    padding: 0;
+    margin: 0;
+    margin-top: -15px;
+    margin-left: 200px;
+    position: absolute;
     width:30px;
     height:30px;
     border-radius: 50%;
     cursor: pointer;
    
 }
+
+header .song_side nav .info{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+    margin-left: 750px;
+    position: absolute;
+    border: 1px solid #36e2ec;
+    border-radius: 20px;
+    background-color: #36e2ec;
+    color: black;
+    font-weight: 300px;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    justify-content: center;
+}
+
+header .song_side nav .info:hover{
+    background-color: rgba(179, 222, 245, 0.653);
+}
+
+header .song_side nav .text{
+    margin-top: 5px;
+    text-decoration: none;
+    color: black;
+}
+
 header .song_side nav img{
     position:absolute;
     width:40px;

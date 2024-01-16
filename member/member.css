@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: aqua;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.profilebox1, .profilebox22, .profilebox3 {
+    height: 100%;
+    width: 33.3%;
+    border: 1px solid black;
+}
+
+.profile1 {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background: url("./img/cuong.jpg");
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 50%;
+}
+.description1{
+    margin-top: 10px;
+    margin-left: 100px;
+    background-color: black;
+    height: 30%;
+    width: 300px;
+}
+.profile2 {
+    background: url("./img/hieu.jpg");
+    background-size: cover;
+}
+.profile3 {
+    background: url("./img/cuong.jpg");
+    background-size: cover;
+}
