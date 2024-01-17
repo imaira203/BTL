@@ -75,6 +75,11 @@ main {
     font-weight: 600;
 }
 
+.container-member .highligh{
+    font-weight: bolder;
+    text-shadow: 1px 1px 10px black;
+}
+
 .member-img {
     height: 100%;
     width: 85%;
