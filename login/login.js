@@ -10,6 +10,5 @@
        
         alert("Đăng nhập thất bại. Vui lòng kiểm tra tên đăng nhập và mật khẩu.");
       }
-      console.log(`Username: ${username.value}, Pass: ${password.value}`);
     }
   

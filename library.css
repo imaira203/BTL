@@ -58,8 +58,9 @@ header .Master_play{
 .style {
     margin:25px 0px 0px 25px ;
     font-size: 24px;
-    font-weight: 500px;
-    animation: colorChange 10s linear infinite;
+            font-weight: 500px;
+
+            animation: colorChange 10s linear infinite;
 }
 @keyframes colorChange {
     0%, 100% {
@@ -343,7 +344,6 @@ header .song_side::before{
   position: absolute;
   height:370px;
   width:100%;
-  background: url('src/img12.jpg');
   background-size: cover;
   z-index: -1;
  }
