@@ -136,6 +136,8 @@ body .main_box{
     background:none;
     background-color: rgb(118, 165, 165);
     transition: 0.5s linear ;
+    position: relative;
+    top:-40px;
 }  
 .main_box  .main_box4 button:hover{
   font-size: 41px;
@@ -144,16 +146,50 @@ body .main_box{
 .main_box  .main_box5 {
    order:6;
    height:100px;
-   border:1px solid;
+   /* border:1px solid; */
    position: relative;
    top:165px;
+   
 }  
 .main_box  .main_box5 .s{
-    height:100%;
+    position: relative;
+    top:-20px;
+    height:60%;
+    width:210px;
     border:1px solid ;
-
+    float:right;
+    background:rgb(118, 165, 165);
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 30px;
+    transition: 1s linear;
+}  
+.main_box  .main_box5 .s h4{
+    position: relative;
+    top: 17px;
+    cursor: pointer;
+ 
+}  
+.main_box  .main_box5 h5{
+    position: relative;
+    top: -10px;
+    cursor: pointer;
+    right: -80px;
+    font-size: 20px;
+    
+}  
+.main_box  .main_box5 .s:hover{
+   background-color: rgb(92, 133, 133);
+}  
+.main_box  .main_box5 .s h4:hover{
+    font-size: 21px;
 }  
  
+ 
+
 
 
 
