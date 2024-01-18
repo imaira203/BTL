@@ -144,5 +144,29 @@ let songs = [
         artist: 'Katy Perry',
         image: './music/img/katy perry- roar.jpg',
     },
+    {
+        name: 'Người con gái ta thương',
+        path: './music/Người Con Gái Ta Thương.mp3',
+        artist: 'Hà Anh Tuấn',
+        image: './music/img/nguoicongaitathuong.jpg',
+    },
+    {
+        name: 'Người tình mùa đông',
+        path: './music/Người Tình Mùa Đông.mp3',
+        artist: 'Hà Anh Tuấn',
+        image: './music/img/nguoitinhmuadong.jpg',
+    },
+    {
+        name: 'Tháng mấy em nhớ anh',
+        path: './music/yTháng Mấy Em Nhớ Anh.mp3',
+        artist: 'Hà Anh Tuấn',
+        image: './music/img/thangmayemnhoanh.jpg',
+    },
+    {
+        name: 'Tháng Tư là lời nói dối của em',
+        path: './music/Tháng Tư Là Lời Nói Dối Của Em.mp3',
+        artist: 'Hà Anh Tuấn',
+        image: './music/img/thangtulaloinoidoicuaem.jpg',
+    },
 
 ]
