@@ -1,16 +1,5 @@
 let songs = [
-    {
-        name: '故梦',
-        path: './music/故梦 - 双笙.mp3',
-        artist: '双笙',
-        image: './music/img/故梦.jpg'
-    },
-    {
-        name: 'Love Is Gone',
-        path: './music/Love is Gone - SLANDER.mp3',
-        artist: 'SLANDER',
-        image: './music/img/LoveIsGone.jpg'
-    },
+    
     {
         name: 'Arian',
         path: './music/arian.mp3',
@@ -66,9 +55,94 @@ let songs = [
         image: './music/img/mck.jpg',
     },
     {
+        name: '100 Milion',
+        path: './100 Million  DIVINE Karan Aujla.mp3',
+        artist: 'DIVINE KAran',
+        image: './music/img/100milion.jpg',
+    },
+    {
         name: 'Bé ơi từ từ',
         path: './music/y2mate.com - WREN EVANS  bé ơi từ từ  LOI CHOI The First Album ft itsnk.mp3',
         artist: 'WREN EVANS',
         image: './music/img/beoitutu.jpg',
     },
+    {
+        name: 'Build a btch',
+        path: './music/Bella Poarch  Build a Btch.mp3',
+        artist: 'Bella Poarch',
+        image: './music/img/bellapoarch.jpg',
+    },
+    {
+        name: 'CHO MÌNH EM',
+        path: './music/BINZ x ĐEN  CHO MÌNH EM.mp3',
+        artist: 'BINZ X ĐEN',
+        image: './music/img/binz.jpg',
+    },
+    {
+        name: 'NDA',
+        path: './music/Billie Eilish  NDA.mp3',
+        artist: 'Bellie Eilish',
+        image: './music/img/NDA.jpg',
+    },
+    {
+        name: 'As It ',
+        path: './music/Harry Styles  As It.mp3',
+        artist: 'Harry Styles',
+        image: './music/img/harry styles-as it was.jpg',
+    },
+    {
+        name: 'JCHRIST',
+        path: './music/Lil Nas X  J CHRIST.mp3',
+        artist: 'Lil Nax X',
+        image: './music/img/jchrist.jpg',
+    },
+    {
+        name: 'MONTERO',
+        path: './music/Lil Nas X  MONTERO Call Me By Your Name.mp3',
+        artist: 'Lil Nas X',
+        image: './music/img/montero.jpg',
+    },
+    {
+        name: 'Old Town Road',
+        path: './music/Lil Nas X  Old Town Road.mp3',
+        artist: 'Lil Nas X',
+        image: './music/img/lilnasx.jpg',
+    },
+    {
+        name: 'INDUSTRY',
+        path: './music/Lil Nas X Jack Harlow  INDUSTRY BABY.mp3',
+        artist: 'Lil Nas X',
+        image: './music/img/lilnasx and jackharlow.jpg',
+    },
+    {
+        name: 'Girls Like You ft Cardi B',
+        path: './music/Maroon 5  Girls Like You ft Cardi B.mp3',
+        artist: 'Maroon 5',
+        image: './music/img/maroon5.jpg',
+    },
+    {
+        name: 'Nhắn nhủ',
+        path: './music/Nhắn nhủ  Ronboogz.mp3',
+        artist: 'Ronboongz',
+        image: './music/img/ronboogz.jpg',
+    },
+    {
+        name: 'The Box',
+        path: './music/Roddy Ricch  The Box.mp3',
+        artist: 'Roddy Ricch',
+        image: './music/img/thebox.jpg',
+    },
+    {
+        name: 'THÍCH EM HƠI NHIỀU',
+        path: './music/WREN EVANS  THÍCH EM HƠI NHIỀU.mp3',
+        artist: 'WREN EVANS',
+        image: './music/img/thichemhoinhieu.jpg',
+    },
+    {
+        name: 'Roar',
+        path: './music/y2mate.com - Katy Perry  Roar.mp3',
+        artist: 'Katy Perry',
+        image: './music/img/katy perry- roar.jpg',
+    },
+
 ]
