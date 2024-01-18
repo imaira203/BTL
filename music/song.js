@@ -1,9 +1,9 @@
 let songs = [
     {
         name: '惊鸿醉',
-        path: './music/惊鸿醉.mp3',
+        path: './music/kinhhong.mp3',
         artist: '指尖笑',
-        image: './music/img/惊鸿醉.jpg'
+        image: './music/img/kinhhong.jpg'
     },
     {
         name: '0321',
@@ -79,7 +79,7 @@ let songs = [
     },
     {
         name: 'タイムパラドックス',
-        path: './music/タイムパラドックス.mp3',
+        path: './music/jap.mp3',
         artist: 'Various Artist',
         image: '../src/disk.png',
     }
