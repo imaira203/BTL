@@ -37,7 +37,7 @@ let songs = [
     }, 
     {
         name: 'Dân chơi sao phải khóc',
-        path: './music/Dân chơi sao phải khóc.mp3',
+        path: './music/danchoi.mp3',
         artist: 'Andree x Ryder',
         image: './music/img/danchoisaophaikhoc.jpg'
     },

@@ -13,6 +13,11 @@ const seekbar = document.querySelector('#seek');
 const volume = document.querySelector('#volume')
 const volIcon = document.querySelector('#volume-icon')
 
+// Lib
+const SongName = document.querySelector('#song-title');
+const Artist = document.querySelector('#song-artist');
+const SongImage = document.querySelector('#song-image');
+
 // Đổi trạng thái của nút play khi được click
 play.addEventListener('click', () => {
     // Thay đổi dừng/phát khi được click
@@ -147,3 +152,33 @@ setInterval(()=>{
         volIcon.classList.add('bi-volume-down-fill');
     }
 }, 100);
+
+// Lib JS
+loadSong = (i) => {
+    let list = '';
+    for (let i = 0; i < songs.length; i++) {
+        list += '<div class="songs" id="songs">';
+        list += `<div class="song-image" id="song-image"><img src="${songs[i].image}"></div>`;
+        list += '<div class="song-info-container">';
+        list += `<div class="song-title" id="song-title">${songs[i].name}</div>`;
+        list += `<div class="song-artist" id="song-artist">${songs[i].artist}</div>`;
+        list += '</div>';
+        list += `<span class="song-duration"></span>`;
+        list += '</div>';
+    }
+    document.getElementById('song-list').innerHTML = list;
+
+    // Lấy thời lượng bài hát và gán vào thẻ span
+    const songDurations = document.querySelectorAll('.song-duration');
+
+    for (let j = 0; j < songs.length; j++) {
+        const audioElement = new Audio(songs[j].path);
+        
+        audioElement.addEventListener('loadedmetadata', () => {
+            const duration = audioElement.duration;
+            songDurations[j].innerHTML = formatTime(duration);
+        });
+    }
+};
+
+window.onload = loadSong();

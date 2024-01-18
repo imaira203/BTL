@@ -553,138 +553,97 @@ header .song_side .content .buttons button:nth-child(2):hover{
     transition:1s linear;
     color:#fff;
 } 
-/* custum phần conten 2 */
-header .song_side .popular_song{
-    width:90%;;
-    height:auto ;
-    /* border: 1px solid #fff; */
-    margin-top: 15px;
-    margin:auto;
-}
-header .song_side .popular_song .h4{
-    display:flex;
-    justify-content:space-between;
-    align-items:  center;
-}
-header .song_side .popular_song .h4 .bi{
-    color:#7c7272;
-    cursor: pointer;
-    transition: 1s linear ;
-}
-header .song_side .popular_song .h4 .bi:hover{
-    color:#b9fdfc;
-}
-header .song_side .popular_song .pop_song{
-    width:100%;
-    height:150px;
-    margin-top: 15px;
-    display:flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-}
-/* ẩn viền trượt */
-header .song_side .popular_song .pop_song::-webkit-scrollbar{
-    display:none;
-}
-/* khu vực ảnh nhạc */
-header .song_side .popular_song .pop_song li{
-    list-style-type: none;
-    margin-right: 15px;
-    height:140px;
-    min-width: 100px;
-    transition: 1s linear;
-}
-header .song_side .popular_song .pop_song li:hover{
-    background-color: #4d4d4d45;
-    
-}
-header .song_side .popular_song .pop_song li .img_play{
-   position:relative;
-   width:100px;
-   height:100px;
-   display:flex;
-   align-items: center;
-   justify-content:center;
-}
-header .song_side .popular_song .pop_song li .img_play img{
-   width:100%;
-   height:100%;
-}
-header .song_side .popular_song .pop_song li .img_play .bi{
-    font-size: 20px;
-    position:absolute;
-    cursor: pointer;
-    transition: .5s linear;
-    opacity: 0 ;   
-}
-header .song_side .popular_song .pop_song li .img_play .bi:hover{
-    opacity: 1;
-}
-header .song_side .popular_song .pop_song li h5{
-   padding: 5px 0px 0px 10px ;
-   font-size: 13px;
-   line-height: 15px;
-}
-header .song_side .popular_song .pop_song li h5 p{
-    color:#94a5c2;
-    font-size: 9px;
-    padding-left: 4px;
+
+/* Song list */
+header .song_side .song-list-container {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 100%;
+    height: 90%;
+    background-image: url('./src/lib-body.jpg');
+    background-size: cover;
 }
 
-header .song_side nav ul li .navi {
-    text-decoration: none;
-}
-/* popular  */
-header .song_side .popular_artists {
-    width:90%;
-    height:160px ;
-    /* border: 1px solid #8c3030; */
-    margin-top: 20px;
-    margin:auto;
-}
-header .song_side .popular_artists .h4 {
-    display:flex;
-    justify-content:space-between;
-    align-items:  center;
-    margin-top: 20px;
-}
-header .song_side .popular_artists .h4 .bi {
-    color:#7c7272;
-    cursor: pointer;
-    transition: 1s linear ;
-}
-header .song_side .popular_artists .h4 .bi:hover {
-    color:#b9fdfc;
-}
-header .song_side .popular_artists .item{
-    width:100%;
-    height:auto;
-    margin-top: 10px;
-    display:flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-}
-/* thêm trượt ẩn viền */
-header .song_side .popular_artists .item::-webkit-scrollbar{
-    display:none;
-
-}
-header .song_side .popular_artists .item li{
-    position: relative;
-    cursor: pointer;
-    list-style-type: none;
-    min-width: 80px;
-    height:80px;
-    background-color: #fff;
-    border-radius: 50%;
-    margin-right: 20px;
-    
-}
-header .song_side .popular_artists .item li img{
-    width:100%;
-    height:100%;
-    border-radius: 50%;
-    position:absolute;
-  
+header .song_side .song-list-container .lib-song {
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
 }
 
+header .song_side .song-list-container .song-list{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-image: url('./src/lib-background.jpg');
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 10px 10px 3px #558696;
+    overflow: auto;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(108, 141, 251);
+    border: 2px solid rgb(108, 141, 251);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(42, 62, 127, 0.682);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #165bcbcb;  
+}
+
+header .song_side .song-list-container .songs{
+    width: 100%;
+    height: 15%;
+    background-color: #34394525;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+header .song_side .song-list-container .songs .song-duration{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+header .song_side .song-list-container .songs .song-image{
+    width: 35px;
+    height: 35px;
+    background-color: red;
+}
+
+header .song_side .song-list-container .songs .song-image img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+header .song_side .song-list-container .songs .song-title{
+    width: fit-content;
+    height: fit-content;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+header .song_side .song-list-container .songs .song-artist{
+    width: fit-content;
+    height: fit-content;
+    font-size: 10px;
+    margin-left: 5px;
+    color: #8aaad0;
+}
