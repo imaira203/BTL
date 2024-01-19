@@ -81,6 +81,6 @@ let songs = [
         name: 'タイムパラドックス',
         path: './music/jap.mp3',
         artist: 'Various Artist',
-        image: '../src/disk.png',
+        image: './music/img/disk.png',
     }
 ]
