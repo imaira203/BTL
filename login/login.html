@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,36 +8,80 @@
     <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
-<body>
-    <div class="main_box">
-        <div class="content">
-            <h1>Login Here!</h1>
-        </div>
-        <div class="main_box1">
-           <img src="src3/logo-eaut.png" >
-        </div>
-        <div class="main_box2">
-            <input type="text" placeholder="email/phone" id="username" />
-            <i class="bi bi-person-fill"></i>
-        </div>
-        <div class="main_box3">
-            <input type="password" placeholder="password" id="password"/>
-            <i class="bi bi-lock-fill"></i>
-        </div>
-        <div class="main_box4">
-            <button type="submit" onclick="login()">Login</button>
 
+<body>
+    <div class="container">
+        <div class="desgin">
+            <div class="pil-1 rotade-45"></div>
+            <div class="pil-2 rotade-45"></div>
+            <div class="pil-3 rotade-45"></div>
+            <div class="pil-4 rotade-45"></div>
         </div>
-        <div class="main_box5">
-            <div class="s">
-                <h4>Sgin Up</h4>
+        <div class="login">
+            <h3 class="title">Login Here!</h3>
+            <div class="text-input">
+                <i class="bi bi-people-fill"></i>
+                <input type="text" placeholder="User Name" id="username" />
             </div>
-           <h5>Forgot 
-              Password
-           </h5>
+            <div class="text-input">
+                <i class="bi bi-key-fill"></i>
+                <input type="password" placeholder="Pass Word" id="password" />
+            </div>
+            
+            <button onclick="validate()">Log In</button>
+            
+            <a href="#" class="forgot">ForGot/User name/Pass Word?</a>
+            <div class="create">
+                <a href="#">Create You acount?</a>
+            </div>
+            <!-- gg-icon -->
+            <div class="icon-gg">
+                <svg viewBox="0 0 48 48">
+                    <title>Google Logo</title>
+                    <clipPath id="g">
+                        <path
+                            d="M44.5 20H24v8.5h11.8C34.7 33.9 30.1 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 4.1 29.6 2 24 2 11.8 2 2 11.8 2 24s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z" />
+                    </clipPath>
+                    <g class="colors" clip-path="url(#g)">
+                        <path fill="#FBBC05" d="M0 37V11l17 13z" />
+                        <path fill="#EA4335" d="M0 11l17 13 7-6.1L48 14V0H0z" />
+                        <path fill="#34A853" d="M0 37l30-23 7.9 1L48 0v48H0z" />
+                        <path fill="#4285F4" d="M48 48L17 24l-4-3 35-10z" />
+                    </g>
+                </svg>
+            </div>
+             <!-- icon-fb -->
+               <div class="icon-fb">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
+                    <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
+                  </svg>
+               </div>
+               <div class="icon-tw">
+                <svg viewBox="328 355 335 276" xmlns="http://www.w3.org/2000/svg">
+                    <path d="
+                      M 630, 425
+                      A 195, 195 0 0 1 331, 600
+                      A 142, 142 0 0 0 428, 570
+                      A  70,  70 0 0 1 370, 523
+                      A  70,  70 0 0 0 401, 521
+                      A  70,  70 0 0 1 344, 455
+                      A  70,  70 0 0 0 372, 460
+                      A  70,  70 0 0 1 354, 370
+                      A 195, 195 0 0 0 495, 442
+                      A  67,  67 0 0 1 611, 380
+                      A 117, 117 0 0 0 654, 363
+                      A  65,  65 0 0 1 623, 401
+                      A 117, 117 0 0 0 662, 390
+                      A  65,  65 0 0 1 630, 425
+                      Z"
+                      style="fill:#3BA9EE;"/>
+                  </svg>
+                  </svg>
+                  
+               </div>
         </div>
-     
     </div>
     <script src="login.js"></script>
 </body>
+
 </html>
