@@ -56,7 +56,7 @@ let songs = [
     },
     {
         name: '100 Milion',
-        path: './100 Million  DIVINE Karan Aujla.mp3',
+        path: './music/100 Million  DIVINE Karan Aujla.mp3',
         artist: 'DIVINE KAran',
         image: './music/img/100milion.jpg',
     },
