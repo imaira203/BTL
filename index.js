@@ -147,3 +147,43 @@ setInterval(()=>{
         volIcon.classList.add('bi-volume-down-fill');
     }
 }, 100);
+
+// Lib JS
+loadSong = (i) => {
+    let list = '';
+    for (let i = 0; i < songs.length; i++) {
+        list += '<div class="songs" id="songs" onclick="playSelectedSong(' + i + ')">'
+        list += `<div class="img-container">`
+        list += `<div class="song-image" id="song-image"><img src="${songs[i].image}"></div>`;
+        list += `<div class="play-btn"><i class="bi bi-play-fill"></i></div>`;
+        list += `</div>`
+        list += '<div class="song-info-container">';
+        list += `<div class="song-title" id="song-title">${songs[i].name}</div>`;
+        list += `<div class="song-artist" id="song-artist">${songs[i].artist}</div>`;
+        list += '</div>';
+        list += `<span class="song-duration"></span>`;
+        list += '</div>';
+    }
+    document.getElementById('song-list').innerHTML = list;
+
+    // Lấy thời lượng bài hát và gán vào thẻ span
+    const songDurations = document.querySelectorAll('.song-duration');
+
+    for (let j = 0; j < songs.length; j++) {
+        const audioElement = new Audio(songs[j].path);
+        
+        audioElement.addEventListener('loadedmetadata', () => {
+            const duration = audioElement.duration;
+            songDurations[j].innerHTML = formatTime(duration);
+        });
+    }
+};
+
+// Play selected song
+playSelectedSong = (index) => {
+    setSong(index);
+    playMusic();
+};
+
+window.onload = loadSong();
+

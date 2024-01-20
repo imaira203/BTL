@@ -1,5 +1,26 @@
 let songs = [
+<<<<<<< HEAD
     
+=======
+    {
+        name: '惊鸿醉',
+        path: './music/kinhhong.mp3',
+        artist: '指尖笑',
+        image: './music/img/kinhhong.jpg'
+    },
+    {
+        name: '0321',
+        path: './music/0321.mp3',
+        artist: 'Spcae X',
+        image: './music/img/0321.jpg'
+    },
+    {
+        name: 'Love Is Gone',
+        path: './music/loveisgone.mp3',
+        artist: 'SLANDER',
+        image: './music/img/loveisgone.jpg'
+    },
+>>>>>>> f4f593a39e392d29517564a6505f59fcd78e2cad
     {
         name: 'Arian',
         path: './music/arian.mp3',
@@ -8,50 +29,50 @@ let songs = [
     }, 
     {
         name: 'Buồn hay vui',
-        path: './music/BUỒN HAY VUI.mp3',
+        path: './music/buonhayvui.mp3',
         artist: 'VSOUL x MCK',
         image: './music/img/buonhayvui.jpg'
     }, 
     {
         name: 'Chẳng còn gì',
-        path: './music/Chẳng Còn Gì.mp3',
+        path: './music/changcongi.mp3',
         artist: 'Salmon',
         image: './music/img/Salmon.png'
     }, 
     {
         name: 'Dân chơi sao phải khóc',
-        path: './music/Dân chơi sao phải khóc.mp3',
+        path: './music/danchoi.mp3',
         artist: 'Andree x Ryder',
         image: './music/img/danchoisaophaikhoc.jpg'
     },
     {
         name: 'GREEN LOVE',
-        path: './music/GREEN LOVE.mp3',
+        path: './music/greenlove.mp3',
         artist: 'QNT',
         image: './music/img/qnt.jpg'
     }, 
     {
         name: 'Lovin On Me',
-        path: './music/Lovin On Me.mp3',
+        path: './music/lovinonme.mp3',
         artist: 'Jack Harlow',
         image: './music/img/lovinonme.jpg'
     }, 
     {
         name: 'Những lời hứa bỏ quên',
-        path: './music/NHỮNG LỜI HỨA BỎ QUÊN.mp3',
+        path: './music/nhungloihua.mp3',
         artist: 'Vũ',
         image: './music/img/nhungloihuaboquen.jpg'
     },
     {
         name: 'Wn id 2022 ft 267',
-        path: './music/Wn  id 2022 ft 267.mp3',
+        path: './music/id2022.mp3',
         artist: 'W/n ',
         image: './music/img/wn.jpg'
     },
     {
         name: 'Tại vì sao',
-        path: './music/Tại vì sao.mp3',
-        artist: 'MCK ',
+        path: './music/taivisao.mp3',
+        artist: 'MCK',
         image: './music/img/mck.jpg',
     },
     {
@@ -62,11 +83,12 @@ let songs = [
     },
     {
         name: 'Bé ơi từ từ',
-        path: './music/y2mate.com - WREN EVANS  bé ơi từ từ  LOI CHOI The First Album ft itsnk.mp3',
+        path: './music/beoitutu.mp3',
         artist: 'WREN EVANS',
         image: './music/img/beoitutu.jpg',
     },
     {
+<<<<<<< HEAD
         name: 'Build a btch',
         path: './music/Bella Poarch  Build a Btch.mp3',
         artist: 'Bella Poarch',
@@ -169,4 +191,11 @@ let songs = [
         image: './music/img/thangtulaloinoidoicuaem.jpg',
     },
 
+=======
+        name: 'タイムパラドックス',
+        path: './music/jap.mp3',
+        artist: 'Various Artist',
+        image: './music/img/disk.png',
+    }
+>>>>>>> f4f593a39e392d29517564a6505f59fcd78e2cad
 ]
