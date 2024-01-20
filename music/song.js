@@ -1,7 +1,5 @@
 let songs = [
-<<<<<<< HEAD
-    
-=======
+
     {
         name: '惊鸿醉',
         path: './music/kinhhong.mp3',
@@ -20,7 +18,6 @@ let songs = [
         artist: 'SLANDER',
         image: './music/img/loveisgone.jpg'
     },
->>>>>>> f4f593a39e392d29517564a6505f59fcd78e2cad
     {
         name: 'Arian',
         path: './music/arian.mp3',
@@ -77,7 +74,7 @@ let songs = [
     },
     {
         name: '100 Milion',
-        path: './music/100 Million  DIVINE Karan Aujla.mp3',
+        path: './BTL/music/100MillionDIVINEKaranAujla.mp3',
         artist: 'DIVINE KAran',
         image: './music/img/100milion.jpg',
     },
@@ -88,114 +85,111 @@ let songs = [
         image: './music/img/beoitutu.jpg',
     },
     {
-<<<<<<< HEAD
         name: 'Build a btch',
-        path: './music/Bella Poarch  Build a Btch.mp3',
+        path: './BTLmusicBellaPoarchBuildaBtch.mp3',
         artist: 'Bella Poarch',
         image: './music/img/bellapoarch.jpg',
     },
     {
         name: 'CHO MÌNH EM',
-        path: './music/BINZ x ĐEN  CHO MÌNH EM.mp3',
+        path: './BTL/music/ChoMinhEm.mp3',
         artist: 'BINZ X ĐEN',
         image: './music/img/binz.jpg',
     },
     {
         name: 'NDA',
-        path: './music/Billie Eilish  NDA.mp3',
+        path: './BTL/music/BillieEilishNDA.mp3',
         artist: 'Bellie Eilish',
         image: './music/img/NDA.jpg',
     },
     {
         name: 'As It ',
-        path: './music/Harry Styles  As It.mp3',
+        path: './BTL/music/asit.mp3',
         artist: 'Harry Styles',
         image: './music/img/harry styles-as it was.jpg',
     },
     {
         name: 'JCHRIST',
-        path: './music/Lil Nas X  J CHRIST.mp3',
+        path: './BTL/music/LilNasXJCHRIST.mp3',
         artist: 'Lil Nax X',
         image: './music/img/jchrist.jpg',
     },
     {
         name: 'MONTERO',
-        path: './music/Lil Nas X  MONTERO Call Me By Your Name.mp3',
+        path: './BTL/music/LilNasXMONTEROCallMeByYourName.mp3',
         artist: 'Lil Nas X',
         image: './music/img/montero.jpg',
     },
     {
         name: 'Old Town Road',
-        path: './music/Lil Nas X  Old Town Road.mp3',
+        path: './BTL/music/LilNasXOldTownRoad.mp3',
         artist: 'Lil Nas X',
         image: './music/img/lilnasx.jpg',
     },
     {
         name: 'INDUSTRY',
-        path: './music/Lil Nas X Jack Harlow  INDUSTRY BABY.mp3',
+        path: './BTL/music/LilNasXJackHarlowINDUSTRYBABY.mp3',
         artist: 'Lil Nas X',
         image: './music/img/lilnasx and jackharlow.jpg',
     },
     {
         name: 'Girls Like You ft Cardi B',
-        path: './music/Maroon 5  Girls Like You ft Cardi B.mp3',
+        path: './BTL/music/Maroon5.mp3',
         artist: 'Maroon 5',
         image: './music/img/maroon5.jpg',
     },
     {
         name: 'Nhắn nhủ',
-        path: './music/Nhắn nhủ  Ronboogz.mp3',
+        path: './BTL/music/nhannhu.mp3',
         artist: 'Ronboongz',
         image: './music/img/ronboogz.jpg',
     },
     {
         name: 'The Box',
-        path: './music/Roddy Ricch  The Box.mp3',
+        path: './BTL/music/RoddyRicchTheBox.mp3',
         artist: 'Roddy Ricch',
         image: './music/img/thebox.jpg',
     },
     {
         name: 'THÍCH EM HƠI NHIỀU',
-        path: './music/WREN EVANS  THÍCH EM HƠI NHIỀU.mp3',
+        path: './BTL/music/thichemhoinhieu.mp3',
         artist: 'WREN EVANS',
         image: './music/img/thichemhoinhieu.jpg',
     },
     {
         name: 'Roar',
-        path: './music/y2mate.com - Katy Perry  Roar.mp3',
+        path: './BTL/music/roar.mp3',
         artist: 'Katy Perry',
         image: './music/img/katy perry- roar.jpg',
     },
     {
         name: 'Người con gái ta thương',
-        path: './music/Người Con Gái Ta Thương.mp3',
+        path: './BTL/music/nguoicongaitathuong.mp3',
         artist: 'Hà Anh Tuấn',
         image: './music/img/nguoicongaitathuong.jpg',
     },
     {
         name: 'Người tình mùa đông',
-        path: './music/Người Tình Mùa Đông.mp3',
+        path: './BTL/music/nguoitinhmuadong.mp3',
         artist: 'Hà Anh Tuấn',
         image: './music/img/nguoitinhmuadong.jpg',
     },
     {
         name: 'Tháng mấy em nhớ anh',
-        path: './music/yTháng Mấy Em Nhớ Anh.mp3',
+        path: './BTL/music/thangmayemnhoanh.mp3',
         artist: 'Hà Anh Tuấn',
         image: './music/img/thangmayemnhoanh.jpg',
     },
     {
         name: 'Tháng Tư là lời nói dối của em',
-        path: './music/Tháng Tư Là Lời Nói Dối Của Em.mp3',
+        path: './BTL/music/thangtulaloinoidoicuaem.mp3',
         artist: 'Hà Anh Tuấn',
         image: './music/img/thangtulaloinoidoicuaem.jpg',
     },
-
-=======
+    {
         name: 'タイムパラドックス',
         path: './music/jap.mp3',
         artist: 'Various Artist',
         image: './music/img/disk.png',
     }
->>>>>>> f4f593a39e392d29517564a6505f59fcd78e2cad
 ]
