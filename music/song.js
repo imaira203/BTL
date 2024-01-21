@@ -1,5 +1,4 @@
 let songs = [
-
     {
         name: '惊鸿醉',
         path: '../music/kinhhong.mp3',
@@ -204,4 +203,37 @@ let artistlist = [
         name: 'Lil Nas X',
         image: '../src/arimg/LilNasX.jpg',
     }
+]
+
+let pplSong = [
+    {
+        name: '惊鸿醉',
+        path: '../music/kinhhong.mp3',
+        artist: '指尖笑',
+        image: '../music/img/kinhhong.jpg'
+    },
+    {
+        name: 'Lovin On Me',
+        path: '../music/lovinonme.mp3',
+        artist: 'Jack Harlow',
+        image: '../music/img/lovinonme.jpg'
+    }, 
+    {
+        name: 'Love Is Gone',
+        path: '../music/loveisgone.mp3',
+        artist: 'SLANDER',
+        image: '../music/img/loveisgone.jpg'
+    },
+    {
+        name: 'Old Town Road',
+        path: '../music/LilNasXOldTownRoad.mp3',
+        artist: 'Lil Nas X',
+        image: '../music/img/lilnasx.jpg',
+    },
+    {
+        name: 'Người tình mùa đông',
+        path: '../music/nguoitinhmuadong.mp3',
+        artist: 'Hà Anh Tuấn',
+        image: '../music/img/nguoitinhmuadong.jpg',
+    },
 ]

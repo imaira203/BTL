@@ -1,5 +1,6 @@
 let currentSong = 0;
 let a = 0;
+const recommendedSongs = [];
 
 const music = document.querySelector('#audio');
 const songName = document.querySelector('#song-name');
@@ -88,7 +89,30 @@ const setSong=(i)=>{
     }, 300);
 }
 
-setSong(0);
+const setPopSong=(i)=>{
+    // Reset seekbar về 0
+    seekbar.value = 0;
+
+    let song = pplSong[i];
+    // Gắn bài hát theo biến i
+    currentSong = i;
+    // Địa chỉ bài hát
+    music.src = song.path;
+    // Lấy tên bài hát
+    songName.innerHTML = song.name;
+    // Lấy tên ca sĩ
+    artist.innerHTML = song.artist;
+    // Lấy ảnh bài hát
+    songImg.style.backgroundImage = `url('${song.image}')`;
+    // Lấy thời gian bài nhạc
+    timeStart.innerHTML = '00:00';
+    // Thời gian tối đa của seekbar và lấy thời gian bài nhạc
+    setTimeout(()=>{
+        seekbar.max = music.duration;
+        timeEnd.innerHTML = formatTime(music.duration);
+    }, 300);
+}
+
 
 // Hàm format time về dạng 00:00
 const formatTime=(time) => {
@@ -152,6 +176,7 @@ setInterval(()=>{
 // Play selected song
 playSelectedSong = (index) => {
     setSong(index);
+    setPopSong(index)
     playMusic();
 };
 
@@ -239,9 +264,12 @@ function searchSongs(keyword) {
 recommend = () => {
     let list = '';
     var stt = 1;
-    for (i=0;i<7;i++){
-            var a = Math.floor(Math.random() * songs.length);
-            list += `<div class="playlist-container" onclick="playSelectedSong(`+ a +`)">`
+    
+    for (i=0;i<6;i++){
+        var a = Math.floor(Math.random() * songs.length);
+        if (!recommendedSongs.includes(a)) {
+            recommendedSongs.push(a);
+            list += `<div class="playlist-container" onclick="playSelectedSong(${a})">`
             list += `<div class="stt" id="stt">${formatSTT(stt)}</div>`
             list += `<div class="img-list" id="img-list">`
             list += `<img src="${songs[a].image}">`
@@ -252,7 +280,25 @@ recommend = () => {
             list += `</div>`
             list += `</div>`
             stt++;
+            }
         }
     document.getElementById('songitem').innerHTML = list;
     }
 window.onload = recommend();
+
+popularSong=(i)=>{
+    let list = '';
+    for(i = 0; i < pplSong.length; i++){
+        list += `<li class="song_item">`;
+        list += `<div onclick="playSelectedSong(${i})" class="img_play">`;
+        list += `<img src="${pplSong[i].image}">`;
+        list += `<i class="bi Playlistplay bi-play-fill"></i>`;
+        list += `</div>`;
+        list += `<div class="song_name">${pplSong[i].name}</div>`;
+        list += `<div class="song_artist">${pplSong[i].artist}</div>`
+        list += `</li>`
+    }
+    document.getElementById('pop_song').innerHTML = list;
+}
+
+window.onload = popularSong();

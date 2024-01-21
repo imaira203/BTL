@@ -151,12 +151,20 @@ header .Menu_side .Menu_song ol{
    cursor: pointer;
    transition: 1s linear;
 }
+header .Menu_song .songitem {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+.songitem::-webkit-scrollbar {
+    display: none;
+}
 header .Menu_song .songitem .playlist-container{
     width: 100%;
-    height: 50px;
+    height: fit-content;
     background-color: #4b4d5325;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     display: flex;
     align-items: center;
 }
@@ -389,7 +397,6 @@ header .song_side::before{
   position: absolute;
   height:370px;
   width:100%;
-  background: url('../src/img12.jpg');
   background-size: cover;
   z-index: -1;
  }
@@ -560,12 +567,20 @@ header .song_side .content{
     width:90%;
     height:30%;
     margin:auto;
-    /* border: 1px solid #13b010 ; */
+    background-image: url('../src/content.jpg');
+    background-size: cover;
     padding-top: 25px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 header .song_side .content h1{
-   font-size: 25px;
-   font-weight: 600;
+    position: relative;
+    left: 10px;
+    font-size: 25px;
+    font-weight: 600;
 }
 header .song_side .content p{
     font-size: 12px;
@@ -610,15 +625,20 @@ header .song_side .content .buttons button:nth-child(2):hover{
     transition:1s linear;
     color:#fff;
 } 
-/* custum phần conten 2 */
+/* custum phần content 2 */
 header .song_side .popular_song{
     width:90%;;
-    height:auto ;
-    /* border: 1px solid #fff; */
+    height: fit-content;
     margin-top: 15px;
     margin:auto;
+    overflow: auto;
 }
+.popular_song::-webkit-scrollbar{
+    background-color: #045d5a;
+}
+
 header .song_side .popular_song .h4{
+    margin-top: 15px;
     display:flex;
     justify-content:space-between;
     align-items:  center;
@@ -633,15 +653,16 @@ header .song_side .popular_song .h4 .bi:hover{
 }
 header .song_side .popular_song .pop_song{
     width:100%;
-    height:150px;
+    height: 150px;
     margin-top: 15px;
     display:flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
+    overflow: auto;
 }
 /* ẩn viền trượt */
 header .song_side .popular_song .pop_song::-webkit-scrollbar{
-    display:none;
+    height: auto;
+    width: 100%;
+    background-color: #045d5a;
 }
 /* khu vực ảnh nhạc */
 header .song_side .popular_song .pop_song li{
@@ -650,42 +671,49 @@ header .song_side .popular_song .pop_song li{
     height:140px;
     min-width: 100px;
     transition: 1s linear;
+    display: flex;
+    flex-direction: column;
 }
 header .song_side .popular_song .pop_song li:hover{
     background-color: #4d4d4d45;
     
 }
 header .song_side .popular_song .pop_song li .img_play{
-   position:relative;
-   width:100px;
-   height:100px;
-   display:flex;
-   align-items: center;
-   justify-content:center;
+    position:relative;
+    width:100px;
+    height:100px;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+header .song_side .popular_song .pop_song .song_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 header .song_side .popular_song .pop_song li .img_play img{
-   width:100%;
-   height:100%;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    cursor: pointer;
 }
 header .song_side .popular_song .pop_song li .img_play .bi{
     font-size: 20px;
-    position:absolute;
+    position: absolute;
     cursor: pointer;
     transition: .5s linear;
     opacity: 0 ;   
 }
-header .song_side .popular_song .pop_song li .img_play .bi:hover{
+header .song_side .popular_song .pop_song li .img_play:hover .bi{
     opacity: 1;
 }
-header .song_side .popular_song .pop_song li h5{
-   padding: 5px 0px 0px 10px ;
-   font-size: 13px;
-   line-height: 15px;
+header .song_side .popular_song .pop_song li .song_name{
+    font-size: 13px;
 }
-header .song_side .popular_song .pop_song li h5 p{
+header .song_side .popular_song .pop_song li .song_artist{
     color:#94a5c2;
-    font-size: 9px;
-    padding-left: 4px;
+    font-size: 10px;
 }
 
 header .song_side nav ul li .navi {
