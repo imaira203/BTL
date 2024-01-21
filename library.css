@@ -429,13 +429,12 @@ header .song_side nav .search input{
 header .song_side nav .user{
     padding: 0;
     margin: 0;
-    margin-top: -15px;
+    margin-top: 20px;
     margin-left: 240px;
     position: absolute;
     width:70px;
     height:70px;
     border-radius: 50%;
-    cursor: pointer;
 }
 
 
