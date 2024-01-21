@@ -613,14 +613,18 @@ header .song_side .song-list-container {
     height: 90%;
     background-image: url('../src/lib-body.jpg');
     background-size: cover;
+    align-items: center;
 }
 
 header .song_side .song-list-container .lib-song {
     height: 10%;
-    width: 100%;
+    width: 30%;
     text-align: center;
     font-size: 30px;
     margin-bottom: 20px;
+    border: 1px solid rgb(24, 71, 112);
+    border-radius: 30px;
+    background: linear-gradient(to left, rgba(49, 80, 195, 0.993), rgba(57, 101, 195, 0.736),rgba(93, 164, 195, 0.774));
 }
 
 header .song_side .song-list-container .song-list{
