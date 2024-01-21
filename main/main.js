@@ -1,4 +1,5 @@
 let currentSong = 0;
+let a = 0;
 
 const music = document.querySelector('#audio');
 const songName = document.querySelector('#song-name');
@@ -164,11 +165,12 @@ function formatSTT(stt){
     return `${stt}`;
 }
 
-function getList(){
+getList=(i)=>{
+
     var stt = 1;
     var list = '';
     for (i=0;i<songs.length;i++){
-        if (songs[i].artist == "Hà Anh Tuấn"){
+        if (songs[i].artist == artistlist[a].name) {
             list += `<div class="playlist-container" onclick="playSelectedSong(`+ i +`)">`
             list += `<div class="stt" id="stt">${formatSTT(stt)}</div>`
             list += `<div class="img-list" id="img-list">`
@@ -184,3 +186,16 @@ function getList(){
     document.getElementById('songitem').innerHTML = list;
     }
 }
+loadArtist=(i)=>{
+    var list = '';
+    for (i = 0; i < artistlist.length; i++){
+        list += `<li onclick="getPlaylist(${i})"><img src="${artistlist[i].image}"></li>`
+    }
+    document.getElementById('item').innerHTML = list;
+}
+
+window.onload = loadArtist();
+
+getPlaylist = (i) => {
+    a = i;
+};
