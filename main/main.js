@@ -166,7 +166,6 @@ function formatSTT(stt){
 }
 
 getList=(i)=>{
-
     var stt = 1;
     var list = '';
     for (i=0;i<songs.length;i++){
@@ -199,3 +198,40 @@ window.onload = loadArtist();
 getPlaylist = (i) => {
     a = i;
 };
+
+
+// Search Bar
+var searchInput = document.getElementById("search");
+searchInput.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    searchSongs(this.value);
+  }
+});
+
+
+function searchSongs(keyword) {
+  var stt = 1;
+  var list = '';
+  var found = 0;
+  for (var i = 0; i < songs.length; i++) {
+    if (songs[i].name.toLowerCase().includes(keyword.toLowerCase())) {
+      list += `<div class="playlist-container" onclick="playSelectedSong(${i})">`
+      list += `<div class="stt" id="stt">${formatSTT(stt)}</div>`
+      list += `<div class="img-list" id="img-list">`
+      list += `<img src="${songs[i].image}">`
+      list += `</div>`
+      list += `<div class="container-list">`
+      list += `<div class="songname-list">${songs[i].name}</div>`
+      list += `<div class="songartist-list">${songs[i].artist}</div>`
+      list += `</div>`
+      list += `</div>`
+      stt++;
+      found++;
+    }
+  }
+
+  document.getElementById('songitem').innerHTML = list;
+  if (found === 0) {
+    alert("Không tìm thấy bài hát");
+  }
+}
