@@ -265,7 +265,7 @@ recommend = () => {
     let list = '';
     var stt = 1;
     
-    for (i=0;i<6;i++){
+    for (i=0;i < 6;i++){
         var a = Math.floor(Math.random() * songs.length);
         if (!recommendedSongs.includes(a)) {
             recommendedSongs.push(a);
@@ -280,6 +280,9 @@ recommend = () => {
             list += `</div>`
             list += `</div>`
             stt++;
+            }
+            else {
+                i--;
             }
         }
     document.getElementById('songitem').innerHTML = list;
