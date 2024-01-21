@@ -432,17 +432,12 @@ header .song_side nav .user{
     margin-top: -15px;
     margin-left: 240px;
     position: absolute;
-    width:30px;
-    height:30px;
+    width:70px;
+    height:70px;
     border-radius: 50%;
     cursor: pointer;
 }
 
-header .song_side nav .user:hover{
-    animation: blur 2s;
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
-}
 
 @keyframes blur {
     0% {
@@ -634,6 +629,7 @@ header .song_side .song-list-container .songs .img-container .song-image img{
     height: 100%;
     background-size: cover;
 }
+
 
 .img-container {
     position:relative;
