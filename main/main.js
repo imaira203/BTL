@@ -235,3 +235,24 @@ function searchSongs(keyword) {
     alert("Không tìm thấy bài hát");
   }
 }
+
+recommend = () => {
+    let list = '';
+    var stt = 1;
+    for (i=0;i<7;i++){
+            var a = Math.floor(Math.random() * songs.length);
+            list += `<div class="playlist-container" onclick="playSelectedSong(`+ a +`)">`
+            list += `<div class="stt" id="stt">${formatSTT(stt)}</div>`
+            list += `<div class="img-list" id="img-list">`
+            list += `<img src="${songs[a].image}">`
+            list += `</div>`
+            list += `<div class="container-list">`
+            list += `<div class="songname-list">${songs[a].name}</div>`
+            list += `<div class="songartist-list">${songs[a].artist}</div>`
+            list += `</div>`
+            list += `</div>`
+            stt++;
+        }
+    document.getElementById('songitem').innerHTML = list;
+    }
+window.onload = recommend();

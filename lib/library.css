@@ -134,57 +134,102 @@ header .Menu_side .Playlist .icon .bi{
     margin-right: 20px;
 }
 header .Menu_side .Menu_song {
-   Width:100% ;
-   height:415px ; 
-   /* border:1px solid #fff ;  */
-
-}
-/* các ảnh nhạc bài hát */
-header .Menu_side .Menu_song li{
-   position: relative;
-   list-style-type: none;
-   padding: 7px 0px 5px 20px ;
-   display:flex ;
-   align-items: center;
-   margin-bottom: 10px;
-   cursor: pointer;
-   transition: 1s linear;
-}
-header .Menu_side .Menu_song li:hover{
-  background-color:  hwb(0 17% 79% / 0.699);
-}
-header .Menu_side .Menu_song {
-   font-size: 14px;
-   color:hsl(0, 0%, 100%);
-   font-weight: 800;
-}
-header .Menu_side .Menu_song li img{
-    width:32px ;
-    height:30px ;
-    margin-left:25px ;
-}
-header .Menu_side .Menu_song li h5{
+    Width:100% ;
+    height:415px ; 
+    /* border:1px solid #fff ;  */
+ }
+ 
+ /* các ảnh nhạc bài hát */
+ header .Menu_side .Menu_song ol{
+    position: relative;
+    padding: 7px 0px 5px 20px ;
+ 
+    display:flex ;
+    flex-direction:column;
+ 
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 1s linear;
+ }
+ header .Menu_song .songitem .playlist-container{
+     width: 100%;
+     height: 50px;
+     background-color: #4b4d5325;
+     border-radius: 10px;
+     margin-bottom: 10px;
+     display: flex;
+     align-items: center;
+ }
+ header .Menu_song .songitem .playlist-container .img-list{
+     position: relative;
+     bottom: 10px;
+     margin-left: 20px;
+     align-items: center;
+     top: 2px;
+     padding: 10px;
+ }
+ header .Menu_song .songitem .playlist-container .img-list img{
+     position: relative;
+     width: 40px;
+     height: 40px;
+ }
+ header .Menu_song .songitem .playlist-container .stt{
+     position: relative;
+     left:18px; 
+     
+ }
+ header .Menu_song .songitem .playlist-container .songname-list {
+     width: fit-content;
+     height: fit-content;
+     color:bisque;
+     font-size: 18px;
+ }
+ header .Menu_song .songitem .playlist-container .songartist-list {
+     position: relative;
+     display: flex;
+     color:#8AAAD0;
+     top: 1px;
+     font-size: 10px;
+ }
+ header .Menu_song .songitem .playlist-container:hover{
+     background-color: #616271;
+ 
+ }  
+ header .Menu_side .Menu_song li:hover{
+   background-color:  hwb(0 17% 79% / 0.699);
+ }
+ header .Menu_side .Menu_song {
+    font-size: 14px;
+    color:hsl(0, 0%, 100%);
+    font-weight: 800;
+ }
+ header .Menu_side .Menu_song li img{
+     width:32px ;
+     height:30px ;
+     margin-left:25px ;
+ }
+ header .Menu_side .Menu_song li h5{
+     font-size: 16px;
+     margin-left: 15px;
+ } 
+ header .Menu_side .Menu_song li .subtile{
+     font-size: 12px;
+     color:#8aaad0 ;
+     margin-top: 3px;
+ }       
+ header .Menu_side .Menu_song li .bi{
+    position: absolute;
+    right:15px ;
+    top:16px ; 
     font-size: 16px;
-    margin-left: 15px;
-} 
-header .Menu_side .Menu_song li .subtile{
-    font-size: 12px;
-    color:#8aaad0 ;
-    margin-top: 3px;
-}       
-header .Menu_side .Menu_song li .bi{
-   position: absolute;
-   right:15px ;
-   top:16px ; 
-   font-size: 16px;
-} 
-/*  kiểu dáng phần Master_play bên trong header */
-header .Master_play {
-    display:flex;
-    align-items: center;
-    padding: 0px 20px ;
-
-}
+ } 
+ /*  kiểu dáng phần Master_play bên trong header */
+ header .Master_play {
+     display:flex;
+     align-items: center;
+     padding: 0px 20px ;
+ 
+ }
  /* Hiệu ứng sóng khi phát nhạc */ 
 header .Master_play .wave{
    width:36px ;
@@ -620,6 +665,7 @@ header .song_side .song-list-container .songs .song-duration{
 header .song_side .song-list-container .songs .img-container .song-image{
     width: 35px;
     height: 35px;
+    background-color: red;
 }
 
 header .song_side .song-list-container .songs .img-container .song-image img{
