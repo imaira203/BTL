@@ -723,7 +723,6 @@ header .song_side nav ul li .navi {
 header .song_side .popular_artists {
     width:90%;
     height:160px ;
-    /* border: 1px solid #8c3030; */
     margin-top: 20px;
     margin:auto;
 }
@@ -770,6 +769,7 @@ header .song_side .popular_artists .item li img{
     height:100%;
     border-radius: 50%;
     position:absolute;
+    border: 1px solid white;
   
 }
 
