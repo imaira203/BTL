@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="icon" type="images/x-icon" href="../src/title.png" />
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <audio src="" id="audio"></audio>
+  <header>
+    <div class="Menu_side">
+      <h1 class="style">Music Player</h1>
+      <div class="Playlist">
+        <h4 class="icon"><span></span><i class="bi bi-music-note"></i>Playlist</h4>
+        <h4><span></span>Last listening</h4>
+        <h4><span></span>Recomend</h4>
+      </div>
+      <div class="Menu_song">
+        <div class="songitem" id="songitem">
+            <!--  -->
+              <!-- <div class="playlist-container">
+                <div class="stt"id="stt">01</div>
+                <div class="img-list" id="img-list">
+                  <img src="../src/img10.jpg" >
+                </div>
+                <div class="container-list">
+                  <div class="songname-list">abc</div>
+                  <div class="songartist-list">xyz</div>
+                </div>
+              </div> -->
+            <!--  -->
+            <!-- <div class="playlist-container">
+              <div class="stt"id="stt">02</div>
+              <div class="img-list"  id="img-list">
+                <img src="../src/img10.jpg" >
+              </div>
+              <div class="container-list">
+                <div class="songname-list"></div>
+                <div class="songartist-list"></div>
+              </div>
+            </div> -->
+                   <!--  -->          
+        </div>
+
+      </div>
+    </div>
+    <!-- menu -->
+    <div class="song_side">
+      <nav>
+        <ul>
+          <li><a href="./main.html">Discovery<span></span></a></li>
+          <li><a href="../lib/library.html">My Library</a></li>
+        </ul>
+        <div class="search">
+          <i class="bi bi-search"></i>
+          <input type="text" placeholder="Search music...">
+        </div>
+        <div class="user">
+          <img src="../src/music8.jpeg">
+        </div>
+        <div class="info">
+            <a class="text" href="../member/member.html">Team members</a>
+        </div>
+      </nav>
+      <div class="content">
+        <h1> Marshmello Music</h1>
+        <p>
+          Life is a journey of discovery and growth. Embrace each challenge as a lesson, cherish every joy as a gift
+          <br>
+          remember that kindness and perseverance illuminate the path to true fulfillment and inner peace.
+        </p>
+        <div class="buttons">
+          <button>Play</button>
+          <button>Follow</button>
+        </div>
+      </div>
+      <div class="popular_song">
+        <div class="h4">
+          <h4>Popular Song</h4>
+          <div class="btn_s">
+            <i class="bi bi-arrow-left"></i>
+            <i class="bi bi-arrow-right"></i>
+          </div>
+        </div>
+        <div class="pop_song">
+          <li class="song_item">
+            <div class="img_play">
+              <img src="../src/img3.jpeg" alt="Đình">
+              <i class="bi Playlistplay bi-play-fill" id="8"></i>
+            </div>
+            <h5>Joy Time
+              <p>Marshmello </p>
+            </h5>
+          </li>
+          <li class="song_item">
+            <div class="img_play">
+              <img src="../src/pop13.jpg" alt="Đình">
+              <i class="bi Playlistplay bi-play-fill" id="9"></i>
+            </div>
+            <h5>The Nights
+              <p>Avicii</p>
+            </h5>
+          </li>
+          <li class="song_item">
+            <div class="img_play">
+              <img src="../src/pop2.jpg" alt="Đình">
+              <i class="bi Playlistplay bi-play-fill" id="10"></i>
+            </div>
+            <h5>Havana
+              <p>Camila Cabello
+              </p>
+            </h5>
+          </li>
+          <li class="song_item">
+            <div class="img_play">
+              <img src="../src/pop3.jpg" alt="Đình">
+              <i class="bi Playlistplay bi-play-fill" id="11"></i>
+            </div>
+            <h5>Shape of You
+              <p>Ed Sheeran
+              </p>
+            </h5>
+          </li>
+          <li class="song_item">
+            <div class="img_play">
+              <img src="../src/pop4.jpg" alt="Đình">
+              <i class="bi Playlistplay bi-play-fill" id="12"></i>
+            </div>
+            <h5>
+              7 Years
+              <p>Lukas Graham
+              </p>
+            </h5>
+          </li>
+          <li class="song_item">
+            <div class="img_play">
+              <img src="../src/pop5.jpg" alt="Đình">
+              <i class="bi Playlistplay bi-play-fill" id="13"></i>
+            </div>
+            <h5>Rude
+              <p> MAGIC </p>
+            </h5>
+          </li>
+          <li class="song_item">
+            <div class="img_play">
+              <img src="../src/pop6.jpg" alt="Đình">
+              <i class="bi Playlistplay bi-play-fill" id="14"></i>
+            </div>
+            <h5>Closer
+              <p>The Chainsmokers
+              </p>
+            </h5>
+          </li>
+          <li class="song_item">
+            <div class="img_play">
+              <img src="../src/pop7.jpg" alt="Đình">
+              <i class="bi Playlistplay bi-play-fill" id="15"></i>
+            </div>
+            <h5>We Are Young
+              <p>Fun </p>
+            </h5>
+          </li>
+          <li class="song_item">
+            <div class="img_play">
+              <img src="../src/pop8.jpg" alt="Đình">
+              <i class="bi Playlistplay bi-play-fill" id="16"></i>
+            </div>
+            <h5>Stay 
+              <p>The Kid LaRoi</p>
+            </h5>
+          </li>
+          <li class="song_item">
+            <div class="img_play">
+              <img src="../src/pop9.jpg" alt="Đình">
+              <i class="bi Playlistplay bi-play-fill" id="17"></i>
+            </div>
+            <h5>
+              La La La
+              <p>Naughty Boy </p>
+            </h5>
+          </li>
+          <li class="song_item">
+            <div class="img_play">
+              <img src="../src/pop10.jpg" alt="Đình">
+              <i class="bi Playlistplay bi-play-fill" id="18"></i>
+            </div>
+            <h5>I'm the One
+              <p>DJ Khaled
+              </p>
+            </h5>
+          </li>
+          <li class="song_item">
+            <div class="img_play">
+              <img src="../src/pop11.jpg" alt="Đình">
+              <i class="bi Playlistplay bi-play-fill" id="19"></i>
+            </div>
+            <h5>Savage Love
+              <p> BTS </p>
+            </h5>
+          </li>
+          <li class="song_item">
+            <div class="img_play">
+              <img src="../src/pop11.jpg" alt="Đình">
+              <i class="bi Playlistplay bi-play-fill" id="20"></i>
+            </div>
+            <h5>Bang Bang
+              <p></p>
+            </h5>Ariana Grande
+          </li>
+         
+        </div>
+      </div>
+      <div class="popular_artists">
+        <div class="h4">
+          <h4>Popular Artists</h4>
+          <div class="btn_s">
+            <i class="bi bi-arrow-left"></i>
+            <i class="bi bi-arrow-right"></i>
+          </div>
+        </div>
+        <div class="item" onclick="getList()">
+          <li>
+            <img src="../src/p1.jpg" alt="Đình">
+          </li>
+          <li>
+            <img src="../src/p3.jpg" alt="Đình">
+          </li>
+          <li>
+            <img src="../src/p4.jpg" alt="Đình">
+          </li>
+          <li>
+            <img src="../src/p5.jpg.webp" alt="Đình">
+          </li>
+          <li>
+            <img src="../src/p8.jpg" alt="Đình">
+          </li>
+          <li>
+            <img src="../src/p9.jpg" alt="Đình">
+          </li>
+          <li>
+            <img src="../src/p10.jpg" alt="Đình">
+          </li>
+          <li>
+            <img src="../src/p13.jpg" alt="Đình">
+          </li>
+          <li>
+            <img src="../src/p14.jpg" alt="Đình">
+          </li>
+          <li>
+            <img src="../src/p15.jpg" alt="Đình">
+          </li>
+          <li>
+            <!-- <img src="src/p16.jpg" alt="Đình"> -->
+          </li>
+          <li>
+            <!-- <img src="src/p17.jpg" alt="Đình"> -->
+          </li>
+          <li>
+            <img src="../src/p15.jpg" alt="Đình">
+          </li>
+          <li>
+            <img src="../src/p19.jpg" alt="Đình">
+          </li>
+        </div>
+      </div>
+    </div>
+
+    <div class="Master_play">
+      <div class="wave">
+        <div class="wave1"></div>
+        <div class="wave1"></div>
+        <div class="wave1"></div>
+      </div>
+      <div id="song-img"></div>
+      <h5>
+        <div class="song-name" id="song-name">Song Name</div>
+        <div class="artist" id="artist">Artist</div>
+      </h5>
+      <div class="icon2">
+        <i class="bi bi-skip-start" id="back"></i>
+        <i class="bi bi-play-fill" id="Play"></i>
+        <i class="bi bi-skip-end" id="next"></i>
+      </div>
+      <span id="timeStart"> 00.00</span>
+      <div class="bar">
+        <!-- thêm thanh tiến độ -->
+        <input type="range" id="seek" value="0" >
+      </div>
+      <span id="timeEnd"> 00.00</span>
+      <!-- volume control  -->
+      <div class="vol">
+        <i class="bi bi-volume-down-fill" id="volume-icon"></i>
+        <form oninput="changeVol()">
+        <input type="range" id="volume" value="100" min="0" max="100">
+        </form>
+        <!-- hiển thị thanh trượt khi điều chỉnh -->
+        <div class="vol_bar"></div>
+      </div>
+    </div>
+  </header>
+    <script src="../music/song.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

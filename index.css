@@ -1,755 +1,197 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-/* phông chữ gg */
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:ital,wght@1,300&display=swap');
+
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+
 }
-/* rs web */
-body{
-    width:100% ;
-    height:100vh ;
-    font-family:'Roboto', sans-serif;
-    background-color:#070A10;
-    display:flex ;
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    height: 100vh;
     justify-content: center;
-    align-content: center;
-}
-header {
-    position: relative;
-    width: 85%  ;
-    height: 90% ; 
-    /* border: 1px solid #fffcfc; */
-    margin-top: 50px;
-    display:flex ;
-    flex-wrap:wrap;
-    overflow:hidden ;
-}
-/* kiểu dáng hai phần Menu_side và Song_side bên trong header */
-header .Menu_side , .song_side{
-  position:relative ;
-  width:25% ;
-  height:90% ;
-  /* border: 1px solid #314e4c; */
-  background-color:#111727;
-  box-shadow: 5px 0px 2px #0f183a ;
-  color:#ffff;
-}
-/*  kiểu dáng của phần Song_side bên trong header
-, ghi đè lên các kiểu dáng được thiết lập trước đó cho Menu_side. */
-header .song_side{
-   width: 75%;
-   background-color:  #101119;
-   /* border: 1px solid #ffff ; */
-}
-header .song_side nav ul li a{
-    text-decoration: none;
-    width: 75%;
-    background-color:  #101119;
-    /* border: 1px solid #ffff ; */
-    color:#ffff;
- }
-header .Master_play{
-    width:100% ;
-    height:10% ;
-    background:#0c213b;
-    box-shadow: 0px 3px 8px rgb(153, 141, 116);
-}
-.style {
-    margin:25px 0px 0px 25px ;
-    font-size: 24px;
-    font-weight: 500px;
-    animation: colorChange 10s linear infinite;
-}
-@keyframes colorChange {
-    0%, 100% {
-        color: red;
-    }
-    20% {
-        color: green;
-    }
-    40% {
-        color: blue;
-    }
-    60% {
-        color: yellow;
-    }
-    80% {
-        color: purple;
-    }
-}
-.Playlist {
-    margin:  40px 0px 0px 20px ;
-}
-/* các phần tử <h4> bên trong Menu_side của header.
- Nó thay đổi màu chữ khi con trỏ chuột di chuyển qua phần tử. */
-header .Menu_side h4 {
-    padding-bottom: 10px;
-    font-weight: 400px;
-    font-size: 14px;
-    color: hwb(249 43% 52% / 0.851);
-    transition: 3s linear ;
-    cursor:pointer ;
-    display:flex;
     align-items: center;
-}
-header .Menu_side h4:hover {
-    color: #ffff;
-}
-/* thêm nút span */
-header .Menu_side h4 span{
-  position: relative;
-  margin-right:35px ;
- 
-
+    background: linear-gradient(to bottom right,#00E6FF,#6aabd7,#2863ab);
 }
 
-/* hiệu ứng nhấp chuột */
-header .Menu_side h4 span::before{
-   content: '';
-   position:absolute;
-   height: 4px;
-   border: 2px solid #624c4c;
-   border-radius: 50%;
-   width: 4px;
-   margin-top: -4px;
-   transition: 1s linear;
-}
-header .Menu_side h4:hover span::before{
-    border:2px solid #ffff ; 
-}
-/* xóa hiệu ứng thêm icon nhạc */
-header .Menu_side .Playlist h4 .bi{   
-    display:none ;
-}
-header .Menu_side .Playlist .icon{
-    color:hwb(186 0% 0%) ;
-    font-size: 16px;
-}
-header .Menu_side .Playlist .icon span{
-    display:none;
-}
-header .Menu_side .Playlist .icon .bi{
-    display:flex ;
-    margin-right: 20px;
-}
-header .Menu_side .Menu_song {
-   Width:100% ;
-   height:415px ; 
-   /* border:1px solid #fff ;  */
-}
-
-/* các ảnh nhạc bài hát */
-header .Menu_side .Menu_song ol{
-   position: relative;
-   padding: 7px 0px 5px 20px ;
-
-   display:flex ;
-   flex-direction:column;
-
-   margin-bottom: 10px;
-   cursor: pointer;
-   transition: 1s linear;
-}
-header .Menu_song .songitem .playlist-container{
-    position: relative;
-    width: 100%;
-    height: 60px;
-    display: flex;
-    margin-bottom: 5px;
-    /* background-color: #616271; */
-    align-items: center;
-    transition: 0.5s linear;
-    cursor: pointer;
-}
-header .Menu_song .songitem .playlist-container .img-list{
-    width: 30px;
-    height:30px;
-    display: flex;
-    position: relative;
-    bottom: 9px;
-    float: left;
-}
-header .Menu_song .songitem .playlist-container .img-list img{
-    width:50px;
-    height:50px; 
-    margin-left: 32px;
-}
-header .Menu_song .songitem .playlist-container .stt{
-    position: relative;
-    left:18px; 
-    
-}
-header .Menu_song .songitem .container-list .song-name{
-   color: #fff; 
-}
-header .Menu_song .songitem .playlist-container .songname-list {
-    position: relative;
-    left:  65px;
-    display: flex;
-    color:bisque;
-    top:1px;
-    font-size: 24px;
-}
-header .Menu_song .songitem .playlist-container .songartist-list {
-    position: relative;
-    left:  65px;
-    display: flex;
-    color:#8AAAD0;
-    top: 1px;
-    font-size: 10px;
-}
-header .Menu_song .songitem .playlist-container:hover{
-    background-color: #616271;
-
-}  
-header .Menu_side .Menu_song li:hover{
-  background-color:  hwb(0 17% 79% / 0.699);
-}
-header .Menu_side .Menu_song {
-   font-size: 14px;
-   color:hsl(0, 0%, 100%);
-   font-weight: 800;
-}
-header .Menu_side .Menu_song li img{
-    width:32px ;
-    height:30px ;
-    margin-left:25px ;
-}
-header .Menu_side .Menu_song li h5{
-    font-size: 16px;
-    margin-left: 15px;
-} 
-header .Menu_side .Menu_song li .subtile{
-    font-size: 12px;
-    color:#8aaad0 ;
-    margin-top: 3px;
-}       
-header .Menu_side .Menu_song li .bi{
-   position: absolute;
-   right:15px ;
-   top:16px ; 
-   font-size: 16px;
-} 
-/*  kiểu dáng phần Master_play bên trong header */
-header .Master_play {
-    display:flex;
-    align-items: center;
-    padding: 0px 20px ;
-
-}
- /* Hiệu ứng sóng khi phát nhạc */ 
-header .Master_play .wave{
-   width:36px ;
-   height:36px ;
-   display:flex;
-   align-items: flex-end;
-   margin-right: 9px;
-   margin-bottom: 25px;
-}
-header .Master_play .wave .wave1{
-    width:3px ;
-    height:10px ;
-    margin-right: 3px;
-    border-radius: 10px 10px 0px 0px ;
-    background-color: aqua;
-    animation: wave 1s linear infinite  ;
-}
-header .Master_play .wave .wave1:nth-child(2){
-    height:13px ;
-    animation-delay: .4s;
-}header .Master_play .wave .wave1:nth-child(3){
-    height:9px ;
-    animation-delay: .8s;
-}
-/* 23:40 */
-@keyframes wave{
-    0%{
-        height:10px;
-    }
-    50%{
-        height:15px;
-    }
-    100%{
-        height:9px;
-        }
-}
-header .Master_play #song-img{
-   background-image: url('./src/disk.png');
-   background-size: cover;
-   width:40px ;
-   height:40px ; 
-   border-radius: 50%;
-   animation: rotate 20s infinite;
-}
-@keyframes rotate {
-    0% {transform: rotate(0);}
-    100% {transform: rotate(360deg);}
-}
-/* căn chỉnh phần play */
-header .Master_play h5{
-    width:130px ;
-    font-size: 13px ;
-    color:#fff ;
-    line-height: 15px;
-    margin-left: 12px;
-}
-header .Master_play h5 .artist{
-    font-size: 12px;
-    color:#8aaad0 ;
-}
-/* thêm icon play  */
-header .Master_play .icon2{
-    font-size: 20px;
-    color:#fff ;
-    display:flex;
-    margin:0px  20px 0px 40px ; 
-}
-/* loại nền thêm hiệu ứng nhấp chuột  */
-header .Master_play .icon2 .bi{
-    cursor: pointer;
-    outline: none ;
-}
-header .Master_play .icon2 .bi:hover{
-    background-color: #36e2ec;
-    animation: pulse 2s linear infinite;
-}
-@keyframes pulse {
-    0% {box-shadow: #045d5a;}
-    50% {box-shadow: 0 0 0 5px rgba(189, 203, 229, 0.1);}
-    100% {box-shadow: 0 0 0 5px rgba(116, 140, 183, 0.505);}
-}
-/* thêm hiệu ứng cho nút thứ 2  */
-header .Master_play .icon2 .bi{
-   border: 1px solid #0f1836 ; 
-   border-radius: 45%;
-   padding: 0px 3px 0px 3px ;
-   margin: 0px 3px ;
-   transition: 1s linear;
-}
-header .Master_play span {
-    color:#fff ;
-    font-weight: 15px;
-    font-size: 11px;
-    font-weight: 600;
-}
-header .Master_play .bar{
-    position: relative;
-    width:50%;
-    height:2px ; 
-    background-color: #616271;
-    margin: 0px 15px 0px 10px ;
-}
-
-header .Master_play .bar #seek{
+.container {
+    width: 50vw;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "login";
+    box-shadow: 0px 0px 17px 10px rgb(0 0 0/30%);
+    border-radius: 20px;
+    background: rgb(211, 240, 244);
     overflow: hidden;
-    position: relative ;
+}
+
+.desgin {
+    grid-area: desgin;
+    display: none;
+    position: relative;
+}
+
+.desgin .pil-1 {
+    bottom: 0;
+    left: -40px;
+    position: absolute;
+    width: 80px;
+    height: 200px;
+    background: linear-gradient(#0000ff,hsl(200, 100%, 99%),#05adfb );
+    border-radius: 40px;
+}
+
+.rotade-45 {
+    transform: rotate(-45deg);
+}
+
+.desgin .pil-2 {
+    top: -130px;
+    left: -80px;
+    position: absolute;
+    height: 450px;
+    width: 200px;
+    background: linear-gradient(rgb(254, 254, 255), rgb(67, 183, 211), rgb(0, 8, 255));
+    border-radius: 200px;
+    border: 30px solid rgb(150, 198, 248);
+}
+
+.desgin .pil-3 {
+    top: -100px;
+    left: 160px;
+    position: absolute;
+    height: 200px;
+    width: 100px;
+    background: linear-gradient(rgb(254, 254, 255),rgb(67, 183, 211), rgb(0, 8, 255));
+    border-radius: 70px;
+
+}
+
+.desgin .pil-4 {
+    bottom: -180px;
+    left: 220px;
+    position: absolute;
+    height: 280px;
+    width: 120px;
+    background: linear-gradient(rgb(28, 28, 214), rgb(133, 215, 235), rgb(0, 8, 255));
+    border-radius: 70px;
+}
+
+.login {
+    grid-area: login;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.text-input {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    height: 40px;
+    width: 60%;
+    align-items: center;
     border-radius: 10px;
-    width: 100% ;
-    top: -12px;
-    left: -1px;
-    cursor: pointer;
-    height: 5px;
-}
-header .Master_play .bar #seek::-webkit-slider-thumb{
-    -webkit-appearance: none;
-}
-header .Master_play .vol{
-    position:relative ;
-    width:100px ;
-    height: 2px ;
-    margin-left: 50px ;
-    background-color: hwb(249 43% 52% / 0.851);
-   
+    padding: 0px 15px;
+    margin: 5px 0px;
 }
 
-/* volume */
-header .Master_play .vol .bi{
-    position: absolute;
-    color:#fff ;
-    font-size: 25px;
-    top:-14px ;
-    left:-32px ;
-    border-radius: 50%;
-    cursor:pointer;
-}
-header .Master_play .vol #volume{
-    overflow: hidden;
-    position: relative ;
-    width: 100% ;
-    top: -12px ;
-    height: 5px;
-    left: -1px;
-    cursor:pointer;
-}
-
-header .Master_play .vol .bi:hover{
-    animation: pulse 2s infinite;
-    background-color: #33496491;
-}
-/* menu */
-header .song_side {
-    z-index: 2;
-}
-/* thêm ảnh background */
-header .song_side::before{
-  content:"";
-  position: absolute;
-  height:370px;
-  width:100%;
-  background: url('src/img12.jpg');
-  background-size: cover;
-  z-index: -1;
- }
-header .song_side nav{
-   width: 90%;
-   height:10%;
-   display: flex ;
-   /* border: 1px solid #cb0b0b ; */
-   align-items: center;
-   margin:  auto;
-   display:flex;
-}
-header .song_side nav ul{
-    display: flex ; 
-    
-}
-/* thêm animation cho menu */
-header .song_side nav ul li{
-   list-style-type: none;
-   position: relative;
-   font-size: 13px; 
-   margin-right:25px ;
-   cursor:pointer ;
-   transition: 1s linear;
-
-}
-header .song_side nav ul li:hover {
-   color:#045d5a ;
-}
-/* custom menu1  */
-header .song_side nav ul li:hover:nth-child(1){
-    color:#7bb3d4 ;
-}
-header .song_side nav ul li:nth-child(2){
-    color:#5e88a9 ;
-}
-header .song_side nav ul li:nth-child(3){
-    color:#558696 ;
-}
-header .song_side nav ul li:hover:nth-child(2){
-    color:#84cef9 ;
-}
-header .song_side nav ul li:hover:nth-child(3){
-    color:#98b3d0 ;
-}
-/* thêm gạch chân menu1 khi hover */
-header .song_side nav ul li span {
-    position: absolute;
-    width:100%;
-    height:2.5px ;
-    background-color: aqua;
-    bottom:-4.5px;
-    border-radius: 30px;
-    left:0;
-}
-header .song_side nav .search{
-   color:rgb(174, 174, 244);
-   border-radius: 20%;
-} 
-/* căn chỉnh dòng serch */
- header .song_side nav .search::before{
-    width:500px ;
-    position: absolute;
-    height:23px;
-    content: "";
-    background-color: #33496491;
-    border-radius: 20px;
-    backdrop-filter: (5px);
-    z-index: -1;
-}  
-header .song_side nav .search .bi{
-    font-size: 13px;
-    padding: 3px 0px 0px 10px;
-}  
-/* xóa nền trắng */
-header .song_side nav .search input{
-   background:none;
-   outline:none;
-   border:none;
-   color:#ffff;
-   font-size: 12px;
-}  
-header .song_side nav .user{
-    padding: 0;
-    margin: 0;
-    margin-top: 20px;
-    margin-left: 240px;
-    position: absolute;
-    width:70px;
-    height:70px;
-    border-radius: 50%;
-}
-
-header .song_side nav .user .bi{
-  font-size: 25px; 
-  transition: 0.5s linear;
-}
-header .song_side nav .user .bi:hover{
-   color: #7bb3d4;
-   transform:rotateX('angle')
-}
-header .song_side nav .user .bi a{
-    text-emphasis: none;
-    text-decoration: none;
-    color: rgba(240, 248, 255, 0);
-    position: absolute;
-    right: 5px;
-    top:-3px;
-    font-size: 20px;
-}
-
-@keyframes blur {
-    0% {
-        -webkit-filter: blur(1px); 
-        filter: blur(1px);
-    }
-    50% {
-        -webkit-filter: blur(2px); 
-        filter: blur(2px);
-    }
-    100% {
-        -webkit-filter: blur(1px); 
-        filter: blur(1px);
-    }
-}
-
-header .song_side nav .info{
-    display: flex;
-    padding: 0;
-    margin: 0;
-    margin-top: 5px;
-    margin-left: 750px;
-    position: absolute;
-    border: 1px solid #36e2ec;
-    border-radius: 20px;
-    background-color: #36e2ec;
-    color: black;
-    font-weight: 300px;
-    width: 150px;
-    height: 30px;
-    text-align: center;
-    justify-content: center;
-}
-
-header .song_side nav .info:hover{
-    background-color: rgba(179, 222, 245, 0.653);
-}
-
-header .song_side nav .text{
-    margin-top: 5px;
-    text-decoration: none;
-    color: black;
-}
-
-header .song_side nav img{
-    position:absolute;
-    width:40px;
-    height:40px;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 2px 2px 8px #0c213b;
-    margin-left: 450px;
-    top:7px;
-
-}
-/* thêm content  */
-header .song_side .content{
-    width:90%;
-    height:30%;
-    margin:auto;
-    /* border: 1px solid #13b010 ; */
-    padding-top: 25px;
-}
-header .song_side .content h1{
-   font-size: 25px;
-   font-weight: 600;
-}
-header .song_side .content p{
-    font-size: 12px;
-    font-weight: 200;
-    color:#626262;
-    margin:10px;
-    font-family: sans-serif;
-}
-header .song_side .content .buttons{
-    margin-top: 15px;
-}
-/* ô  */
-header .song_side .content .buttons button:nth-child(1){
-   height:30px;
-   width:130px ;
-   /* border: 2px solid #06ff66; */
-   border-radius: 20px;
-   outline: none;   
-   background-color:#36e2ec;
-   color:#fff;
-}
-header .song_side .content .buttons button:nth-child(2){
-    height:30px;
-    width:130px ;
-    border: 2px solid #36e2ec;
-    border-radius: 20px;
-    outline: none;   
-    color:#36e2ec;
-    background:none;
- }
-header .song_side .content .buttons button:nth-child(1):hover{
-    /* border: 2px solid #06ff66; */
+.text-input input {
+    border: none;
+    outline: none;
     background: none;
-    color:#36e2ec;
-    transition:1s linear;
-
-}
-/* custom ô 2 */
-header .song_side .content .buttons button:nth-child(2):hover{
-    border: 2px solid #36e2ec; 
-    background-color: #36e2ec;
-    transition:1s linear;
-    color:#fff;
-} 
-/* custum phần conten 2 */
-header .song_side .popular_song{
-    width:90%;;
-    height:auto ;
-    /* border: 1px solid #fff; */
-    margin-top: 15px;
-    margin:auto;
-}
-header .song_side .popular_song .h4{
-    display:flex;
-    justify-content:space-between;
-    align-items:  center;
-}
-header .song_side .popular_song .h4 .bi{
-    color:#7c7272;
-    cursor: pointer;
-    transition: 1s linear ;
-}
-header .song_side .popular_song .h4 .bi:hover{
-    color:#b9fdfc;
-}
-header .song_side .popular_song .pop_song{
-    width:100%;
-    height:150px;
-    margin-top: 15px;
-    display:flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-}
-/* ẩn viền trượt */
-header .song_side .popular_song .pop_song::-webkit-scrollbar{
-    display:none;
-}
-/* khu vực ảnh nhạc */
-header .song_side .popular_song .pop_song li{
-    list-style-type: none;
-    margin-right: 15px;
-    height:140px;
-    min-width: 100px;
-    transition: 1s linear;
-}
-header .song_side .popular_song .pop_song li:hover{
-    background-color: #4d4d4d45;
-    
-}
-header .song_side .popular_song .pop_song li .img_play{
-   position:relative;
-   width:100px;
-   height:100px;
-   display:flex;
-   align-items: center;
-   justify-content:center;
-}
-header .song_side .popular_song .pop_song li .img_play img{
-   width:100%;
-   height:100%;
-}
-header .song_side .popular_song .pop_song li .img_play .bi{
-    font-size: 20px;
-    position:absolute;
-    cursor: pointer;
-    transition: .5s linear;
-    opacity: 0 ;   
-}
-header .song_side .popular_song .pop_song li .img_play .bi:hover{
-    opacity: 1;
-}
-header .song_side .popular_song .pop_song li h5{
-   padding: 5px 0px 0px 10px ;
-   font-size: 13px;
-   line-height: 15px;
-}
-header .song_side .popular_song .pop_song li h5 p{
-    color:#94a5c2;
-    font-size: 9px;
-    padding-left: 4px;
+    margin-left: 15px;
+    width: 100%;
+    height: 100%;
+    color: rgb(189, 244, 244);
 }
 
-header .song_side nav ul li .navi {
+.text-input .bi {
+
+    color: rgb(171, 246, 246);
+
+    color: rgb(18, 20, 20);
+
+}
+
+::placeholder {
+    color: #9a9a9a;
+}
+
+@media (min-width:768px) {
+    .container {
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "desgin login ";
+    }
+
+    .desgin {
+        display: block;
+    }
+}
+
+.login h3.title {
+    margin: 15px 0px;
+}
+
+button{
+    cursor: pointer;
+    width: 68%;
+    padding: 10px;
+    color: #ddd4d4;
+    background: linear-gradient(to right,  rgb(0, 8, 255), rgb(67, 183, 211),rgb(164, 205, 222));
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    transition: 0.6s linear;
+}
+button:hover{
+    transform: scale(1.05);
+}
+a {
+    font-size: 12px;
+    color: #9a9a9a;
+    user-select: none;
     text-decoration: none;
 }
-/* popular  */
-header .song_side .popular_artists {
-    width:90%;
-    height:160px ;
-    /* border: 1px solid #8c3030; */
-    margin-top: 20px;
-    margin:auto;
-}
-header .song_side .popular_artists .h4 {
-    display:flex;
-    justify-content:space-between;
-    align-items:  center;
-    margin-top: 20px;
-}
-header .song_side .popular_artists .h4 .bi {
-    color:#7c7272;
-    cursor: pointer;
-    transition: 1s linear ;
-}
-header .song_side .popular_artists .h4 .bi:hover {
-    color:#b9fdfc;
-}
-header .song_side .popular_artists .item{
-    width:100%;
-    height:auto;
-    margin-top: 10px;
-    display:flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-}
-/* thêm trượt ẩn viền */
-header .song_side .popular_artists .item::-webkit-scrollbar{
-    display:none;
 
-}
-header .song_side .popular_artists .item li{
-    position: relative;
-    cursor: pointer;
-    list-style-type: none;
-    min-width: 80px;
-    height:80px;
-    background-color: #fff;
-    border-radius: 50%;
-    margin-right: 20px;
-    
-}
-header .song_side .popular_artists .item li img{
-    width:100%;
-    height:100%;
-    border-radius: 50%;
-    position:absolute;
-  
+a.forgot {
+    margin-top: 15px;
 }
 
+.create {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 60px;
+}
+
+.icon-gg {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    bottom: 5px;
+    right: 90px;
+    cursor: pointer;
+}
+
+.icon-fb {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    bottom: 28px;
+    right: 60px;
+    cursor: pointer;
+    color: darkblue;
+}
+
+.icon-tw {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    cursor: pointer;
+}

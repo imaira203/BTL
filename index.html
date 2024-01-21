@@ -2,309 +2,85 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Music Player</title>
-  <link rel="icon" type="images/x-icon" href="./src/title.png" />
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
-  <audio src="" id="audio"></audio>
-  <header>
-    <div class="Menu_side">
-      <h1 class="style">Music Player</h1>
-      <div class="Playlist">
-        <h4 class="icon"><span></span><i class="bi bi-music-note"></i>Playlist</h4>
-        <h4><span></span>Last listening</h4>
-        <h4><span></span>Recomend</h4>
-      </div>
-      <div class="Menu_song">
-        <div class="songitem">
-            <!--  -->
-              <div class="playlist-container">
-                <div class="stt"id="stt">01</div>
-                <div class="img-list"  id="img-list">
-                  <img src="src/img10.jpg" >
-                </div>
-                <div class="container-list">
-                  <div class="songname-list">abc</div>
-                  <div class="songartist-list">xyz</div>
-                </div>
-              </div>
-            <!--  -->
-            <div class="playlist-container">
-              <div class="stt"id="stt">02</div>
-              <div class="img-list"  id="img-list">
-                <img src="src/img10.jpg" >
-              </div>
-              <div class="container-list">
-                <div class="songname-list"></div>
-                <div class="songartist-list"></div>
-              </div>
-            </div>
-                   <!--  -->          
+    <div class="container">
+        <div class="desgin">
+            <div class="pil-1 rotade-45"></div>
+            <div class="pil-2 rotade-45"></div>
+            <div class="pil-3 rotade-45"></div>
+            <div class="pil-4 rotade-45"></div>
         </div>
-
-      </div>
+        <div class="login">
+            <h3 class="title">Login Here!</h3>
+            <div class="text-input">
+                <i class="bi bi-people-fill"></i>
+                <input type="text" placeholder="User Name" id="username" />
+            </div>
+            <div class="text-input">
+                <i class="bi bi-key-fill"></i>
+                <input type="password" placeholder="Pass Word" id="password" />
+            </div>
+            
+            <button onclick="validate()">Log In</button>
+            
+            <a href="#" class="forgot">Forgot Password?</a>
+            <div class="create">
+                <a href="#">Create You Account?</a>
+            </div>
+            <!-- gg-icon -->
+            <div class="icon-gg">
+                <svg viewBox="0 0 48 48">
+                    <title>Google Logo</title>
+                    <clipPath id="g">
+                        <path
+                            d="M44.5 20H24v8.5h11.8C34.7 33.9 30.1 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 4.1 29.6 2 24 2 11.8 2 2 11.8 2 24s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z" />
+                    </clipPath>
+                    <g class="colors" clip-path="url(#g)">
+                        <path fill="#FBBC05" d="M0 37V11l17 13z" />
+                        <path fill="#EA4335" d="M0 11l17 13 7-6.1L48 14V0H0z" />
+                        <path fill="#34A853" d="M0 37l30-23 7.9 1L48 0v48H0z" />
+                        <path fill="#4285F4" d="M48 48L17 24l-4-3 35-10z" />
+                    </g>
+                </svg>
+            </div>
+             <!-- icon-fb -->
+               <div class="icon-fb">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
+                    <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
+                  </svg>
+               </div>
+               <div class="icon-tw">
+                <svg viewBox="328 355 335 276" xmlns="http://www.w3.org/2000/svg">
+                    <path d="
+                      M 630, 425
+                      A 195, 195 0 0 1 331, 600
+                      A 142, 142 0 0 0 428, 570
+                      A  70,  70 0 0 1 370, 523
+                      A  70,  70 0 0 0 401, 521
+                      A  70,  70 0 0 1 344, 455
+                      A  70,  70 0 0 0 372, 460
+                      A  70,  70 0 0 1 354, 370
+                      A 195, 195 0 0 0 495, 442
+                      A  67,  67 0 0 1 611, 380
+                      A 117, 117 0 0 0 654, 363
+                      A  65,  65 0 0 1 623, 401
+                      A 117, 117 0 0 0 662, 390
+                      A  65,  65 0 0 1 630, 425
+                      Z"
+                      style="fill:#3BA9EE;"/>
+                  </svg>
+                  
+               </div>
+        </div>
     </div>
-    <!-- menu -->
-    <div class="song_side">
-      <nav>
-        <ul>
-          <li><a href="./index.html">Discovery<span></span></a></li>
-          <li><a href="./library.html">My Library</a></li>
-        </ul>
-        <div class="search">
-          <i class="bi bi-search"></i>
-          <input type="text" placeholder="Search music...">
-        </div>
-        <div class="user">
-          <img src="./src/music8.jpeg">
-        </div>
-        <div class="info">
-            <a class="text" href="./member/member.html">Team members</a>
-        </div>
-      </nav>
-      <div class="content">
-        <h1> Marshmello Music</h1>
-        <p>
-          Life is a journey of discovery and growth. Embrace each challenge as a lesson, cherish every joy as a gift
-          <br>
-          remember that kindness and perseverance illuminate the path to true fulfillment and inner peace.
-        </p>
-        <div class="buttons">
-          <button>Play</button>
-          <button>Follow</button>
-        </div>
-      </div>
-      <div class="popular_song">
-        <div class="h4">
-          <h4>Popular Song</h4>
-          <div class="btn_s">
-            <i class="bi bi-arrow-left"></i>
-            <i class="bi bi-arrow-right"></i>
-          </div>
-        </div>
-        <div class="pop_song">
-          <li class="song_item">
-            <div class="img_play">
-              <img src="src/img3.jpeg" alt="Đình">
-              <i class="bi Playlistplay bi-play-fill" id="8"></i>
-            </div>
-            <h5>Joy Time
-              <p>Marshmello </p>
-            </h5>
-          </li>
-          <li class="song_item">
-            <div class="img_play">
-              <img src="src/pop13.jpg" alt="Đình">
-              <i class="bi Playlistplay bi-play-fill" id="9"></i>
-            </div>
-            <h5>The Nights
-              <p>Avicii</p>
-            </h5>
-          </li>
-          <li class="song_item">
-            <div class="img_play">
-              <img src="src/pop2.jpg" alt="Đình">
-              <i class="bi Playlistplay bi-play-fill" id="10"></i>
-            </div>
-            <h5>Havana
-              <p>Camila Cabello
-              </p>
-            </h5>
-          </li>
-          <li class="song_item">
-            <div class="img_play">
-              <img src="src/pop3.jpg" alt="Đình">
-              <i class="bi Playlistplay bi-play-fill" id="11"></i>
-            </div>
-            <h5>Shape of You
-              <p>Ed Sheeran
-              </p>
-            </h5>
-          </li>
-          <li class="song_item">
-            <div class="img_play">
-              <img src="src/pop4.jpg" alt="Đình">
-              <i class="bi Playlistplay bi-play-fill" id="12"></i>
-            </div>
-            <h5>
-              7 Years
-              <p>Lukas Graham
-              </p>
-            </h5>
-          </li>
-          <li class="song_item">
-            <div class="img_play">
-              <img src="src/pop5.jpg" alt="Đình">
-              <i class="bi Playlistplay bi-play-fill" id="13"></i>
-            </div>
-            <h5>Rude
-              <p> MAGIC </p>
-            </h5>
-          </li>
-          <li class="song_item">
-            <div class="img_play">
-              <img src="src/pop6.jpg" alt="Đình">
-              <i class="bi Playlistplay bi-play-fill" id="14"></i>
-            </div>
-            <h5>Closer
-              <p>The Chainsmokers
-              </p>
-            </h5>
-          </li>
-          <li class="song_item">
-            <div class="img_play">
-              <img src="src/pop7.jpg" alt="Đình">
-              <i class="bi Playlistplay bi-play-fill" id="15"></i>
-            </div>
-            <h5>We Are Young
-              <p>Fun </p>
-            </h5>
-          </li>
-          <li class="song_item">
-            <div class="img_play">
-              <img src="src/pop8.jpg" alt="Đình">
-              <i class="bi Playlistplay bi-play-fill" id="16"></i>
-            </div>
-            <h5>Stay 
-              <p>The Kid LaRoi</p>
-            </h5>
-          </li>
-          <li class="song_item">
-            <div class="img_play">
-              <img src="src/pop9.jpg" alt="Đình">
-              <i class="bi Playlistplay bi-play-fill" id="17"></i>
-            </div>
-            <h5>
-              La La La
-              <p>Naughty Boy </p>
-            </h5>
-          </li>
-          <li class="song_item">
-            <div class="img_play">
-              <img src="src/pop10.jpg" alt="Đình">
-              <i class="bi Playlistplay bi-play-fill" id="18"></i>
-            </div>
-            <h5>I'm the One
-              <p>DJ Khaled
-              </p>
-            </h5>
-          </li>
-          <li class="song_item">
-            <div class="img_play">
-              <img src="src/pop11.jpg" alt="Đình">
-              <i class="bi Playlistplay bi-play-fill" id="19"></i>
-            </div>
-            <h5>Savage Love
-              <p> BTS </p>
-            </h5>
-          </li>
-          <li class="song_item">
-            <div class="img_play">
-              <img src="src/pop11.jpg" alt="Đình">
-              <i class="bi Playlistplay bi-play-fill" id="20"></i>
-            </div>
-            <h5>Bang Bang
-              <p></p>
-            </h5>Ariana Grande
-          </li>
-         
-        </div>
-      </div>
-      <div class="popular_artists">
-        <div class="h4">
-          <h4>Popular Artists</h4>
-          <div class="btn_s">
-            <i class="bi bi-arrow-left"></i>
-            <i class="bi bi-arrow-right"></i>
-          </div>
-        </div>
-        <div class="item">
-          <li>
-            <img src="src/p1.jpg" alt="Đình">
-          </li>
-          <li>
-            <img src="src/p3.jpg" alt="Đình">
-          </li>
-          <li>
-            <img src="src/p4.jpg" alt="Đình">
-          </li>
-          <li>
-            <img src="src/p5.jpg.webp" alt="Đình">
-          </li>
-          <li>
-            <img src="src/p8.jpg" alt="Đình">
-          </li>
-          <li>
-            <img src="src/p9.jpg" alt="Đình">
-          </li>
-          <li>
-            <img src="src/p10.jpg" alt="Đình">
-          </li>
-          <li>
-            <img src="src/p13.jpg" alt="Đình">
-          </li>
-          <li>
-            <img src="src/p14.jpg" alt="Đình">
-          </li>
-          <li>
-            <img src="src/p15.jpg" alt="Đình">
-          </li>
-          <li>
-            <!-- <img src="src/p16.jpg" alt="Đình"> -->
-          </li>
-          <li>
-            <!-- <img src="src/p17.jpg" alt="Đình"> -->
-          </li>
-          <li>
-            <img src="src/p15.jpg" alt="Đình">
-          </li>
-          <li>
-            <img src="src/p19.jpg" alt="Đình">
-          </li>
-        </div>
-      </div>
-    </div>
-
-    <div class="Master_play">
-      <div class="wave">
-        <div class="wave1"></div>
-        <div class="wave1"></div>
-        <div class="wave1"></div>
-      </div>
-      <div id="song-img"></div>
-      <h5>
-        <div class="song-name" id="song-name">Song Name</div>
-        <div class="artist" id="artist">Artist</div>
-      </h5>
-      <div class="icon2">
-        <i class="bi bi-skip-start" id="back"></i>
-        <i class="bi bi-play-fill" id="Play"></i>
-        <i class="bi bi-skip-end" id="next"></i>
-      </div>
-      <span id="timeStart"> 00.00</span>
-      <div class="bar">
-        <!-- thêm thanh tiến độ -->
-        <input type="range" id="seek" value="0" >
-      </div>
-      <span id="timeEnd"> 00.00</span>
-      <!-- volume control  -->
-      <div class="vol">
-        <i class="bi bi-volume-down-fill" id="volume-icon"></i>
-        <form oninput="changeVol()">
-        <input type="range" id="volume" value="100" min="0" max="100">
-        </form>
-        <!-- hiển thị thanh trượt khi điều chỉnh -->
-        <div class="vol_bar"></div>
-      </div>
-    </div>
-  </header>
-    <script src="./music/song.js"></script>
-    <script src="./index.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
