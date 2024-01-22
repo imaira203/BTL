@@ -1,5 +1,4 @@
 let currentSong = 0;
-let a = 0;
 const recommendedSongs = [];
 
 const music = document.querySelector('#audio');
@@ -176,7 +175,11 @@ setInterval(()=>{
 // Play selected song
 playSelectedSong = (index) => {
     setSong(index);
-    setPopSong(index)
+    playMusic();
+};
+
+playPopSong = (index) => {
+    setPopSong(index);
     playMusic();
 };
 
@@ -265,7 +268,7 @@ recommend = () => {
     let list = '';
     var stt = 1;
     
-    for (i=0;i < 6;i++){
+    for (i=0;i<6;i++){
         var a = Math.floor(Math.random() * songs.length);
         if (!recommendedSongs.includes(a)) {
             recommendedSongs.push(a);
@@ -293,7 +296,7 @@ popularSong=(i)=>{
     let list = '';
     for(i = 0; i < pplSong.length; i++){
         list += `<li class="song_item">`;
-        list += `<div onclick="playSelectedSong(${i})" class="img_play">`;
+        list += `<div onclick="playPopSong(${i})" class="img_play">`;
         list += `<img src="${pplSong[i].image}">`;
         list += `<i class="bi Playlistplay bi-play-fill"></i>`;
         list += `</div>`;
