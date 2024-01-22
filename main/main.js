@@ -112,6 +112,7 @@ const setPopSong=(i)=>{
     }, 300);
 }
 
+setPopSong(0);
 
 // Hàm format time về dạng 00:00
 const formatTime=(time) => {
