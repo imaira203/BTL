@@ -495,6 +495,8 @@ header .song_side nav .search input{
    border:none;
    color:#ffff;
    font-size: 12px;
+   width: 500px;
+   height: 22px;
 }  
 header .song_side nav .user{
     padding: 0;

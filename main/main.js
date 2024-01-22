@@ -233,13 +233,14 @@ getPlaylist = (i) => {
 
 
 // Search Bar
+function searchAttachment(){
 var searchInput = document.getElementById("search");
-searchInput.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    searchSongs(this.value);
-  }
+searchInput.addEventListener("input", function(event) {
+  searchSongs(this.value);
 });
+}
 
+window.onload = searchAttachment();
 
 function searchSongs(keyword) {
   var stt = 1;
@@ -322,7 +323,7 @@ libClick=()=>{
     </ul>
     <div class="search">
       <i class="bi bi-search"></i>
-      <input type="text" id="search" placeholder="Search music...">
+      <input id="search" type="text" placeholder="Search music...">
     </div>
     <div class="user">
       <img src="../src/music8.jpeg">
@@ -366,6 +367,7 @@ libClick=()=>{
   </div>`;
   document.getElementById('song_side').innerHTML = list;
   loadSong();
+  searchAttachment()
 }
 
 mainClick=()=>{
@@ -431,13 +433,16 @@ mainClick=()=>{
   document.getElementById('song_side').innerHTML = list;
   loadArtist();
   popularSong();
+  searchAttachment()
 }
 
 libchange.addEventListener('click', () => {
     loadSong();
+    searchAttachment()
 })
 
 mainchange.addEventListener('click', () => {
     loadArtist();
     popularSong();
+    searchAttachment()
 })
