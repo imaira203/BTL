@@ -162,6 +162,24 @@ let songs = [
         image: '../music/img/katy perry- roar.jpg',
     },
     {
+        name: 'Lạc trôi',
+        path: '../music/lactroi.mp3',
+        artist: 'Sơn Tùng MTP',
+        image: '../music/img/lactroi.jpg',
+    },
+    {
+        name: 'Making My Way',
+        path: '../music/makingmyway.mp3',
+        artist: 'Sơn Tùng MTP',
+        image: '../music/img/makingmyway.jpg',
+    },
+    {
+        name: 'Nơi này có anh',
+        path: '../music/noinaycoanh.mp3',
+        artist: 'Sơn Tùng MTP',
+        image: '../music/img/sontungmtp.jpg',
+    },
+    {
         name: 'Người con gái ta thương',
         path: '../music/nguoicongaitathuong.mp3',
         artist: 'Hà Anh Tuấn',
@@ -190,7 +208,31 @@ let songs = [
         path: '../music/jap.mp3',
         artist: 'Various Artist',
         image: '../music/img/disk.png',
-    }
+    },
+    {
+        name: 'Anh luôn như vậy',
+        path: '../music/anhluonnhuvay.mp3',
+        artist: 'Bray',
+        image: '../music/img/anhluonnhuvay.jpg',
+    },
+    {
+        name: 'Cao ốc',
+        path: '../music/caooc.mp3',
+        artist: 'Bray',
+        image: '../music/img/caooc.jpg',
+    },
+    {
+        name: 'Ex Hate Me',
+        path: '../music/exhateme.mp3',
+        artist: 'Bray',
+        image: '../music/img/exhateme.jpg',
+    },
+    {
+        name: 'Xin đừng nhấc máy',
+        path: '../music/xindungnhacmay.mp3',
+        artist: 'Bray',
+        image: '../music/img/xindungnhacmay.jpg',
+    },
 ];
 
 
@@ -200,9 +242,49 @@ let artistlist = [
         image: '../src/arimg/haanhtuan.jpg',
     },
     {
+        name: 'Sơn Tùng MTP',
+        image: '../src/arimg/Sontungmtp.jpg',
+    },
+    {
+        name: 'Bray',
+        image: '../src/arimg/bray.jpg',
+    },
+    {
         name: 'Lil Nas X',
         image: '../src/arimg/LilNasX.jpg',
-    }
+    },
+    {
+        name: 'Billie Eilish',
+        image: '../src/arimg/billieeilish.jpg',
+    },
+    {
+        name: 'Binz',
+        image: '../src/arimg/binz.jpg',
+    },
+    {
+        name: 'Maroon 5',
+        image: '../src/arimg/maroon5.jpg',
+    },
+    {
+        name: 'Mck',
+        image: '../src/arimg/mck.jpg',
+    },
+    {
+        name: 'QNT',
+        image: '../src/arimg/qnt.jpg',
+    },
+    {
+        name: 'Roddy Ricch',
+        image: '../src/arimg/roddyricch.jpg',
+    },
+    {
+        name: 'Ronboongz',
+        image: '../src/arimg/ronboongz.jpg',
+    },
+    {
+        name: 'Wren Evans',
+        image: '../src/arimg/wrenevans.jpg',
+    },
 ]
 
 let pplSong = [
