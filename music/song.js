@@ -92,7 +92,7 @@ let songs = [
     {
         name: 'CHO MÌNH EM',
         path: '../music/ChoMinhEm.mp3',
-        artist: 'BINZ X ĐEN',
+        artist: 'Binz',
         image: '../music/img/binz.jpg',
     },
     {
@@ -152,7 +152,7 @@ let songs = [
     {
         name: 'THÍCH EM HƠI NHIỀU',
         path: '../music/thichemhoinhieu.mp3',
-        artist: 'WREN EVANS',
+        artist: 'Wren Evans',
         image: '../music/img/thichemhoinhieu.jpg',
     },
     {
@@ -269,6 +269,68 @@ let songs = [
         artist: 'MCK',
         image: '../music/img/nghenhutinhyeu.jpg',
     },
+    {
+        name: 'Down Below',
+        path: '../music/downbelow.mp3',
+        artist: 'Roddy Ricch',
+        image: '../music/img/downbelow.jpg',
+    },
+    {
+        name: 'Bad Guy',
+        path: '../music/badguy.mp3',
+        artist: 'Bellie Eilish',
+        image: '../music/img/badguy.jpg',
+    },
+    {
+        name: 'Lovely',
+        path: '../music/lovely.mp3',
+        artist: 'Bellie Eilish',
+        image: '../music/img/lovely.jpg',
+    },
+    {
+        name: 'When the party is over',
+        path: '../music/whenthepartysover.mp3',
+        artist: 'Bellie Eilish',
+        image: '../music/img/whenthepartyisover.jpg',
+    },
+    {
+        name: 'Hit Me Up',
+        path: '../music/hitmeup.mp3',
+        artist: 'Binz',
+        image: '../music/img/hitmeup.jpg',
+    },
+    {
+        name: 'Bigcityboy',
+        path: '../music/bigcityboy.mp3',
+        artist: 'Binz',
+        image: '../music/img/bigcityboy.jpg',
+    },
+    {
+        name: 'OK',
+        path: '../music/ok.mp3',
+        artist: 'Binz',
+        image: '../music/img/ok.jpg',
+    },
+    {
+        name: 'Khi mà',
+        path: '../music/khima.mp3',
+        artist: 'Ronboongz',
+        image: '../music/img/khima.jpg',
+    },
+    {
+        name: 'Lan man',
+        path: '../BTL/music/lanman.mp3',
+        artist: 'Ronboongz',
+        image: '../music/img/lanman.jpg',
+    },
+    {
+        name: 'Anh chỉ muốn',
+        path: '../music/anhchimuon.mp3',
+        artist: 'Ronboongz',
+        image: '../music/img/anhcimuon.jpg',
+    },
+
+
 ];
 
 
@@ -290,7 +352,7 @@ let artistlist = [
         image: '../src/arimg/LilNasX.jpg',
     },
     {
-        name: 'Billie Eilish',
+        name: 'Bellie Eilish',
         image: '../src/arimg/billieeilish.jpg',
     },
     {
