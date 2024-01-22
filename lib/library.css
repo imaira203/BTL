@@ -523,24 +523,6 @@ header .song_side nav .user{
     }
 }
 
-header .song_side nav .info{
-    display: flex;
-    padding: 0;
-    margin: 0;
-    margin-top: 5px;
-    margin-left: 750px;
-    position: absolute;
-    border: 1px solid #36e2ec;
-    border-radius: 20px;
-    background-color: #36e2ec;
-    color: black;
-    font-weight: 300px;
-    width: 150px;
-    height: 30px;
-    text-align: center;
-    justify-content: center;
-}
-
 header .song_side nav .info:hover{
     background-color: rgba(179, 222, 245, 0.653);
 }
