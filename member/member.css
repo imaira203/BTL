@@ -119,6 +119,15 @@ main .gitlink {
     text-align: center;
     font-size: 40px;
 }
+main .gitlink a{
+    text-decoration: none;
+    color: #000;
+}
+
+main .gitlink a:hover{
+    text-decoration: underline;
+    color: rgb(24, 73, 87)
+}
 
 main .project {
     display: flex;
