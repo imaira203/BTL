@@ -114,6 +114,12 @@ main {
     text-decoration:none;
     text-shadow: none;
 }
+
+main .gitlink {
+    text-align: center;
+    font-size: 40px;
+}
+
 main .project {
     display: flex;
     flex-direction: column;
