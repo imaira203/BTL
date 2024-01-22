@@ -14,7 +14,7 @@ const seekbar = document.querySelector('#seek');
 const volume = document.querySelector('#volume')
 const volIcon = document.querySelector('#volume-icon')
 
-const mainchage = document.querySelector('#maintab');
+const mainchange = document.querySelector('#maintab');
 const libchange = document.querySelector('#libtab');
 
 // Đổi trạng thái của nút play khi được click
