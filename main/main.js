@@ -14,6 +14,9 @@ const seekbar = document.querySelector('#seek');
 const volume = document.querySelector('#volume')
 const volIcon = document.querySelector('#volume-icon')
 
+const mainchage = document.querySelector('#maintab');
+const libchange = document.querySelector('#libtab');
+
 // Đổi trạng thái của nút play khi được click
 play.addEventListener('click', () => {
     // Thay đổi dừng/phát khi được click
@@ -309,3 +312,132 @@ popularSong=(i)=>{
 }
 
 window.onload = popularSong();
+
+libClick=()=>{
+    let list = ''
+    list += `      <nav>
+    <ul>
+      <li onclick="mainClick()" id="maintab"><a>Discovery</a></li>
+      <li onclick="libClick()" id="libtab"><a>My Library<span></span></a></li>
+    </ul>
+    <div class="search">
+      <i class="bi bi-search"></i>
+      <input type="text" id="search" placeholder="Search music...">
+    </div>
+    <div class="user">
+      <img src="../src/music8.jpeg">
+    </div>
+    <div class="info">
+        <a class="text" href="../member/member.html">Team members</a>
+    </div>
+  </nav>
+  <div class="song-list-container">
+    <div class="lib-song">Library</div>
+
+    <div class="song-list" id="song-list">
+      
+      <!-- EXAMPLE FORM TESTING -->
+      
+      <!-- <div class="songs" id="songs">
+        <div class="song-image" id="song-image"></div>
+        <div class="song-info-container">
+          <div class="song-title" id="song-title">Song 1</div>
+          <div class="song-artist" id="song-artist">Artist 1</div>
+        </div>
+      </div>
+
+      <div class="songs">
+        <div class="song-image"></div>
+        <div class="song-info-container">
+          <div class="song-title">Song 2</div>
+          <div class="song-artist">Artist 2</div>
+        </div>
+      </div>
+
+      <div class="songs">
+        <div class="song-image"></div>
+        <div class="song-info-container">
+          <div class="song-title">Song 3</div>
+          <div class="song-artist">Artist 3</div>
+        </div>
+      </div> -->
+
+    </div>
+  </div>`;
+  document.getElementById('song_side').innerHTML = list;
+  loadSong();
+}
+
+mainClick=()=>{
+    let list = '';
+    list += `      <nav>
+    <ul>
+      <li onclick="mainClick()" id="maintab"><a>Discovery<span></span></a></li>
+      <li onclick="libClick()" id="libtab"><a>My Library</a></li>
+    </ul>
+    <div class="search">
+      <i class="bi bi-search"></i>
+      <input id="search" type="text" placeholder="Search music...">
+    </div>
+    <div class="user">
+      <img src="../src/music8.jpeg">
+    </div>
+    <div class="info">
+        <a class="text" href="../member/member.html">Team members</a>
+    </div>
+  </nav>
+  <div class="content">
+    <h1> Enjoy The Journey</h1>
+    <p>
+      Life is a journey of discovery and growth. Embrace each challenge as a lesson, cherish every joy as a gift
+      <br>
+      remember that kindness and perseverance illuminate the path to true fulfillment and inner peace.
+    </p>
+    <div class="buttons">
+      <button>Play</button>
+      <button>Follow</button>
+    </div>
+  </div>
+  <div class="popular_song">
+    <div class="h4">
+      <h4>Popular Song</h4>
+    </div>
+    <div class="pop_song" id="pop_song">
+      <!-- <li class="song_item">
+        <div class="img_play">
+          <img src="../src/img3.jpeg">
+          <i class="bi Playlistplay bi-play-fill"></i>
+        </div>
+        <h5>Joy Time
+          <p>Marshmello </p>
+        </h5>
+      </li> -->
+    </div>
+  </div>
+
+  <div class="popular_artists">
+    <div class="h4">
+      <h4>Popular Artists</h4>
+    </div>
+    <div class="item" id="item" onclick="getList()">
+      <!-- <li>
+        <img src="../src/p1.jpg" alt="Đình">
+      </li>
+      <li>
+        <img src="../src/p3.jpg" alt="Đình">
+      </li> -->
+    </div>
+  </div>`
+  document.getElementById('song_side').innerHTML = list;
+  loadArtist();
+  popularSong();
+}
+
+libchange.addEventListener('click', () => {
+    loadSong();
+})
+
+mainchange.addEventListener('click', () => {
+    loadArtist();
+    popularSong();
+})
