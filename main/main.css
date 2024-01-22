@@ -487,11 +487,13 @@ header .song_side nav .search .bi{
 }  
 /* xóa nền trắng */
 header .song_side nav .search input{
-   background:none;
-   outline:none;
-   border:none;
-   color:#ffff;
-   font-size: 12px;
+    height: 22px;
+    width: 470px;
+    background:none;
+    outline:none;
+    border:none;
+    color:#ffff;
+    font-size: 12px;
 }  
 header .song_side nav .user{
     padding: 0;
