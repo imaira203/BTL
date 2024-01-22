@@ -168,6 +168,20 @@ header .Menu_song .songitem .playlist-container{
     display: flex;
     align-items: center;
 }
+header .Menu_song .songitem .playlist-container .not-found{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+header .Menu_song .songitem .playlist-container .not-found p{
+    position: relative;
+    text-align: center;
+    align-items: center;
+}
+
 header .Menu_song .songitem .playlist-container .img-list{
     position: relative;
     bottom: 10px;
