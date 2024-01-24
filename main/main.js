@@ -395,10 +395,6 @@ mainClick=()=>{
       <br>
       remember that kindness and perseverance illuminate the path to true fulfillment and inner peace.
     </p>
-    <div class="buttons">
-      <button>Play</button>
-      <button>Follow</button>
-    </div>
   </div>
   <div class="popular_song">
     <div class="h4">
