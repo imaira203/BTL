@@ -237,6 +237,7 @@ function searchAttachment(){
 var searchInput = document.getElementById("search");
 searchInput.addEventListener("input", function(event) {
   searchSongs(this.value);
+  searchArtists(this.value);
 });
 }
 
@@ -248,6 +249,33 @@ function searchSongs(keyword) {
   var found = 0;
   for (var i = 0; i < songs.length; i++) {
     if (songs[i].name.toLowerCase().includes(keyword.toLowerCase())) {
+      list += `<div class="playlist-container" onclick="playSelectedSong(${i})">`
+      list += `<div class="stt" id="stt">${formatSTT(stt)}</div>`
+      list += `<div class="img-list" id="img-list">`
+      list += `<img src="${songs[i].image}">`
+      list += `</div>`
+      list += `<div class="container-list">`
+      list += `<div class="songname-list">${songs[i].name}</div>`
+      list += `<div class="songartist-list">${songs[i].artist}</div>`
+      list += `</div>`
+      list += `</div>`
+      stt++;
+      found++;
+    }
+  }
+  if (found === 0) {
+    list += `<div class="playlist-container">`
+    list += `<div class="not-found"><p>Không tìm thấy bài hát</p></div></div>`
+  }
+  document.getElementById('songitem').innerHTML = list;
+}
+
+function searchArtists(keyword) {
+  var stt = 1;
+  var list = '';
+  var found = 0;
+  for (var i = 0; i < songs.length; i++) {
+    if (songs[i].artist.toLowerCase().includes(keyword.toLowerCase())) {
       list += `<div class="playlist-container" onclick="playSelectedSong(${i})">`
       list += `<div class="stt" id="stt">${formatSTT(stt)}</div>`
       list += `<div class="img-list" id="img-list">`

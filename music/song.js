@@ -319,7 +319,7 @@ let songs = [
     },
     {
         name: 'Lan man',
-        path: '../BTL/music/lanman.mp3',
+        path: '../music/lanman.mp3',
         artist: 'Ronboongz',
         image: '../music/img/lanman.jpg',
     },
